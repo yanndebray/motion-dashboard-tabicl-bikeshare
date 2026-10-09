@@ -1,20 +1,24 @@
-#stage { --ground:#14233A; --main:#2A9187; --second:#EAF2F0; --accent:#E0951B; color:var(--second); font-family:var(--sans, system-ui, sans-serif) }
-.ground { position:absolute; inset:0; background:radial-gradient(120% 100% at 68% 32%, color-mix(in srgb, var(--main) 14%, var(--ground)), var(--ground)) }
-.words { position:absolute; margin:0; display:flex; flex-direction:column; gap:22px; z-index:6 } .words > * { margin:0 }
-.line { font-family:var(--display, var(--sans, system-ui, sans-serif)); font-size:96px; line-height:1.02; font-weight:800; letter-spacing:-.015em; text-wrap:balance }
-.sub { font-size:34px; line-height:1.3; color:color-mix(in srgb, var(--second) 72%, var(--ground)); text-wrap:balance }
-.big { font-family:var(--display, var(--sans, system-ui, sans-serif)); font-weight:800; font-size:240px; line-height:.9; letter-spacing:-.03em; font-variant-numeric:tabular-nums }
-.hot { color:var(--accent) } .cool { color:var(--main) }
-.clock { position:absolute; z-index:6; font-family:var(--mono, ui-monospace, monospace); font-size:40px; font-variant-numeric:tabular-nums; background:color-mix(in srgb, var(--ground) 88%, var(--second)); border:2px solid color-mix(in srgb, var(--second) 18%, transparent); padding:16px 26px; border-radius:16px; display:flex; flex-direction:column; gap:6px }
-.clock small { font-family:var(--sans, system-ui, sans-serif); font-size:22px; color:color-mix(in srgb, var(--second) 65%, var(--ground)) }
-.tag { position:absolute; z-index:6; font-size:26px; font-weight:700; background:var(--second); color:var(--ground); padding:12px 18px; border-radius:12px; box-shadow:0 10px 28px rgba(0,0,0,.35); white-space:nowrap; font-variant-numeric:tabular-nums; transform-origin:0 100% }
-.tag small { display:block; font-size:19px; font-weight:400; color:color-mix(in srgb, var(--ground) 70%, var(--second)) }
+#stage { --ground:#F1EADF; --main:#1F8076; --second:#1D2730; --accent:#E39A1C; color:var(--second); font-family:var(--sans, system-ui, sans-serif) }
+.ground { position:absolute; inset:0; background:radial-gradient(120% 100% at 60% 40%, var(--ground), color-mix(in srgb, var(--ground) 90%, var(--second))) }
+.words { position:absolute; margin:0; display:flex; flex-direction:column; gap:20px; z-index:6 } .words > * { margin:0 }
+.city ~ .words { background:color-mix(in srgb, var(--ground) 90%, transparent); padding:30px 36px; border-radius:20px; box-shadow:0 16px 40px rgba(0,0,0,.14) }
+.line { font-family:var(--display, var(--sans, system-ui, sans-serif)); font-size:96px; line-height:1.0; font-weight:800; letter-spacing:-.01em; text-wrap:balance }
+.sub { font-size:34px; line-height:1.3; color:color-mix(in srgb, var(--second) 75%, var(--ground)); text-wrap:balance }
+.big { font-family:var(--display, var(--sans, system-ui, sans-serif)); font-weight:800; font-size:260px; line-height:.88; letter-spacing:-.02em; font-variant-numeric:tabular-nums }
+.hot { color:color-mix(in srgb, var(--accent) 82%, var(--second)) } .cool { color:var(--main) }
+.clock { position:absolute; z-index:6; font-family:var(--display, var(--sans, system-ui, sans-serif)); font-weight:800; font-size:84px; line-height:1; font-variant-numeric:tabular-nums; background:var(--second); color:var(--ground); padding:24px 34px 22px; border-radius:6px; display:flex; flex-direction:column; gap:10px; box-shadow:0 14px 34px rgba(0,0,0,.22) }
+.clock small { font-family:var(--sans, system-ui, sans-serif); font-weight:400; font-size:26px; color:color-mix(in srgb, var(--ground) 80%, var(--second)) }
+.tag { position:absolute; z-index:6; font-family:var(--display, var(--sans, system-ui, sans-serif)); font-size:46px; line-height:1.05; font-weight:800; background:color-mix(in srgb, var(--ground) 25%, white); color:var(--second); padding:16px 24px 14px; border:3px solid var(--second); border-radius:4px; white-space:nowrap; font-variant-numeric:tabular-nums; transform-origin:36px calc(100% + var(--lead, 70px)); box-shadow:0 10px 26px rgba(0,0,0,.16) }
+.tag::after { content:""; position:absolute; left:33px; top:100%; width:3px; height:var(--lead, 70px); background:var(--second) }
+.tag.is-flip { transform-origin:calc(100% - 36px) calc(100% + var(--lead, 70px)) } .tag.is-flip::after { left:auto; right:33px }
+.tag small { display:block; margin-top:6px; font-family:var(--sans, system-ui, sans-serif); font-size:32px; font-weight:500; color:var(--second) }
 .tag.is-hot { background:var(--accent) }
 .city { position:absolute; inset:0 }
 .city-svg, .city-fx { position:absolute; left:0; top:0; width:1920px; height:1080px; overflow:visible }
-.city-night { position:absolute; inset:0; background:var(--ground); pointer-events:none }
+.city-night { position:absolute; inset:0; background:color-mix(in srgb, var(--second) 86%, var(--main)); pointer-events:none }
 .street { stroke:color-mix(in srgb, var(--second) 8%, transparent); stroke-width:2 }
 .plateau { fill:color-mix(in srgb, var(--ground) 80%, var(--accent)) } .cliff { fill:color-mix(in srgb, var(--ground) 90%, var(--accent)) }
 .bld-t { fill:color-mix(in srgb, var(--ground) 62%, var(--second)) } .bld-l { fill:color-mix(in srgb, var(--ground) 76%, var(--second)) } .bld-r { fill:color-mix(in srgb, var(--ground) 84%, var(--second)) }
-.stn { stroke:var(--ground); stroke-width:2 } .stn-hill { fill:var(--accent) } .stn-down { fill:var(--main) } .stn-other { fill:color-mix(in srgb, var(--second) 38%, var(--ground)) }
-.zone-label { font-family:var(--display, var(--sans, system-ui, sans-serif)); font-weight:800; font-size:30px; letter-spacing:.14em; fill:color-mix(in srgb, var(--second) 55%, var(--ground)) }
+.stn { stroke:none } .stn-hill { fill:var(--accent) } .stn-down { fill:var(--main) } .stn-other { fill:color-mix(in srgb, var(--second) 38%, var(--ground)) }
+.stn-halo { fill:color-mix(in srgb, var(--ground) 30%, white); stroke:var(--main); stroke-width:2.5 }
+.zone-label { font-family:var(--display, var(--sans, system-ui, sans-serif)); font-weight:800; font-size:34px; letter-spacing:.16em; fill:color-mix(in srgb, var(--second) 70%, var(--ground)); paint-order:stroke; stroke:color-mix(in srgb, var(--ground) 40%, white); stroke-width:7px; stroke-linejoin:round }
