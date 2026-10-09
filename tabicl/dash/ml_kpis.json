@@ -1,0 +1,1 @@
+[{"t1_mae_tabicl":21.7,"t1_mae_hgb":23.6,"t1_mae_yesterday":29.2,"t1_cov80":0.911,"t2_auc_tabicl":0.95,"t2_auc_hgb":0.938,"t2_ap_tabicl":0.774,"t2_ap_hgb":0.738,"t3_mae_tabicl":9.4,"t3_mae_naive":9.7,"agreement_min":0.9799,"test_days":123,"test_rows_t2":1476}]

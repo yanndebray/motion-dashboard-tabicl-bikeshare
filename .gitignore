@@ -1,0 +1,17 @@
+# secrets
+.env
+# large / rebuildable (see README: scripts/01_load.py downloads and rebuilds them)
+data/trips/
+data/bikeshare.duckdb
+# environments and caches
+tabicl/.venv/
+__pycache__/
+.DS_Store
+# API probe scratch files and artifact upload wrappers
+tabicl/tr.csv
+tabicl/trr.csv
+tabicl/te.csv
+tabicl/ctx.csv
+**/index_doc.json
+data/motion*/doc_*.json
+data/motion/step2.json

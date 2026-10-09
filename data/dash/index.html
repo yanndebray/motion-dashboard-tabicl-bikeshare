@@ -1,0 +1,397 @@
+<style>
+  .bk { --hill: #E0951B; --down: #2A9187; --other: var(--cds-chart-muted); font-family: var(--font-anthropic-sans); display: grid; gap: var(--cds-gap-lg); }
+  .bk-head { display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: var(--cds-gap-md); }
+  .bk-head > div { min-width: 0; }
+  .bk-eyebrow { font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); letter-spacing: .04em; }
+  .bk-title { font-family: var(--font-anthropic-serif); font-weight: 400; font-size: var(--cds-font-size-title); margin: 0; text-wrap: balance; }
+  .bk-sub { color: var(--color-fg-muted); font-size: var(--cds-font-size-body); margin: 2px 0 0; font-variant-numeric: tabular-nums; }
+  .bk-take { font-size: var(--cds-font-size-body); margin: var(--cds-gap-sm) 0 0; max-width: 70ch; }
+  .bk-take b { font-weight: 600; }
+  .bk-seg { display: inline-flex; border: 1px solid var(--color-border-line); border-radius: var(--cds-radius); padding: 2px; gap: 2px; background: var(--color-panel); }
+  .bk-seg button { font: inherit; font-size: var(--cds-font-size-caption); border: 0; background: transparent; color: var(--color-fg-muted); padding: var(--cds-pad-xs) var(--cds-pad-sm); border-radius: calc(var(--cds-radius) - 2px); cursor: pointer; }
+  .bk-seg button[aria-pressed="true"] { background: var(--color-bg); color: var(--color-fg); box-shadow: 0 0 0 1px var(--color-border-line); }
+  .bk-seg button:focus-visible { outline: 2px solid var(--down); outline-offset: 1px; }
+  .bk-kpis { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 10.5rem), 1fr)); gap: var(--cds-gap-md); }
+  .bk-kpi { background: var(--color-panel); border: 1px solid var(--color-border-line); border-radius: var(--cds-radius); padding: var(--cds-pad-md) var(--cds-pad-lg); display: grid; gap: 4px; align-content: start; position: relative; overflow: hidden; }
+  .bk-kpi.is-hill { box-shadow: inset 0 3px 0 var(--hill); }
+  .bk-kpi.is-down { box-shadow: inset 0 3px 0 var(--down); }
+  .bk-kpi .lbl { font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); }
+  .bk-kpi .val { font-family: var(--font-anthropic-serif); font-weight: 400; font-size: var(--cds-font-size-title); line-height: 1.1; font-variant-numeric: tabular-nums; }
+  .bk-kpi .note { font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); font-variant-numeric: tabular-nums; }
+  .bk-kpi .up { color: var(--color-ok); }
+  .bk-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 22rem), 1fr)); gap: var(--cds-gap-md); }
+  .bk-card { background: var(--color-panel); border: 1px solid var(--color-border-line); border-radius: var(--cds-radius); padding: var(--cds-pad-lg); min-width: 0; display: grid; gap: var(--cds-gap-sm); align-content: start; }
+  .bk-card h3 { margin: 0; font-size: var(--cds-font-size-heading); font-weight: var(--cds-font-weight-medium); }
+  .bk-card .hint { margin: 0; font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); }
+  .bk-chart { position: relative; min-height: 220px; }
+  .bk-chart.tall { min-height: 300px; }
+  .bk-chart svg { display: block; overflow: visible; }
+  .bk-chart text { fill: var(--color-fg-muted); font-size: 11px; font-family: var(--font-anthropic-sans); }
+  .bk-chart .lab-strong { fill: var(--color-fg); font-weight: 600; }
+  .bk-chart .grid line { stroke: var(--cds-chart-grid); }
+  .bk-chart .axis path, .bk-chart .axis line { stroke: var(--cds-chart-axis); }
+  .bk-legend { display: flex; flex-wrap: wrap; gap: var(--cds-gap-md); font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); }
+  .bk-legend i { display: inline-block; width: 10px; height: 10px; border-radius: 3px; margin-right: 6px; vertical-align: -1px; }
+  .bk-tip { position: absolute; pointer-events: none; background: var(--cds-surface-popover); border: 1px solid var(--cds-border); border-radius: var(--cds-radius); box-shadow: var(--cds-shadow-popover); padding: var(--cds-pad-xs) var(--cds-pad-sm); font-size: var(--cds-font-size-caption); white-space: nowrap; z-index: 2; font-variant-numeric: tabular-nums; }
+  .bk-tip .t { color: var(--cds-text-secondary); margin-bottom: 2px; }
+  .bk-tip i { display: inline-block; width: 8px; height: 8px; border-radius: 2px; margin-right: 6px; }
+  .bk-foot { font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); max-width: 90ch; display: grid; gap: 4px; }
+  .bk-foot p { margin: 0; }
+  .bk-section { margin: var(--cds-gap-sm) 0 0; font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); letter-spacing: .04em; text-transform: uppercase; }
+  [data-dash-source-state=empty] { color: transparent; }
+  [data-dash-source-state=refreshing] { opacity: .5; transition: opacity var(--cds-dur-slow); }
+  .bk-fail { display: flex; align-items: center; justify-content: center; gap: 6px; min-height: inherit; color: var(--color-fg-muted); font-size: var(--cds-font-size-caption); }
+  .bk-fail::before { content: ""; width: .375rem; height: .375rem; border-radius: 50%; background: var(--color-bad); }
+  @media (prefers-reduced-motion: no-preference) {
+    .bk-drawn .bk-fade { animation: bkfade var(--cds-dur-slow) var(--cds-ease-out) both; }
+    @keyframes bkfade { from { opacity: 0; } to { opacity: 1; } }
+  }
+</style>
+
+<div class="bk" id="overview">
+  <header class="bk-head">
+    <div>
+      <div class="bk-eyebrow">Capital Bikeshare · Washington, DC</div>
+      <h2 class="bk-title">System overview</h2>
+      <p class="bk-sub"><span data-source="ops" data-field="stations" class="dash-skeleton">—</span> stations, <span data-source="ops" data-field="docks" class="dash-skeleton">—</span> docks · Jan – Dec <span data-source="ops" data-field="year">—</span></p>
+      <p class="bk-take" id="takeaway"><b data-source="ops" data-field="hill_station">—</b> is empty by <b data-source="ops" data-field="hill_empty_at">—</b> on a typical weekday, and <b class="bk-hillshare" data-source="ops" data-field="empty_share_hill">—</b> of summer empty-dock moments happen on the hill. Carrying <b data-source="ops" data-field="bikes_uphill">—</b> bikes back up each weekday morning is the fix to plan for.</p>
+    </div>
+    <div class="bk-seg" role="group" aria-label="Riders" id="rider-filter">
+      <button type="button" data-rider="All" aria-pressed="true">All</button>
+      <button type="button" data-rider="Members" aria-pressed="false">Members</button>
+      <button type="button" data-rider="Casual" aria-pressed="false">Casual</button>
+    </div>
+  </header>
+
+  <section class="bk-kpis" id="kpis" aria-label="Headline figures">
+    <div class="bk-kpi"><span class="lbl">Total trips, 2012</span><span class="val kpi-r" data-source="kpis" data-field="trips">—</span><span class="note"><span class="up kpi-g" data-source="growth" data-field="growth">—</span> vs 2011 · <span class="kpi-rl">All riders</span>, every station</span></div>
+    <div class="bk-kpi"><span class="lbl">Busiest day</span><span class="val kpi-r" data-source="kpis" data-field="busiest_rides">—</span><span class="note kpi-r" data-source="kpis" data-field="busiest_date">—</span></div>
+    <div class="bk-kpi"><span class="lbl">Weekday rides, 6–9 am</span><span class="val kpi-r" data-source="kpis" data-field="am_share">—</span><span class="note"><span class="up kpi-g" data-source="am_delta" data-field="pp">—</span> vs 2011, share of weekday rides</span></div>
+    <div class="bk-kpi is-hill"><span class="lbl">Empty-dock moments (est.)</span><span class="val" data-source="ops" data-field="empty_moments">—</span><span class="note">Weekday mornings, July to September 2012</span></div>
+    <div class="bk-kpi is-hill"><span class="lbl">Share on the hill</span><span class="val bk-hillshare" data-source="ops" data-field="empty_share_hill">—</span><span class="note"><span data-source="ops" data-field="hill_station">—</span> empty by <span data-source="ops" data-field="hill_empty_at">—</span></span></div>
+    <div class="bk-kpi is-down"><span class="lbl">Bikes to move uphill</span><span class="val" data-source="ops" data-field="bikes_uphill">—</span><span class="note">Each weekday, after the morning rush runs downhill</span></div>
+  </section>
+
+  <div class="bk-grid">
+    <section class="bk-card" id="rides-per-day">
+      <h3>Rides per day</h3>
+      <p class="hint">Daily trips with the 7-day average, 2012</p>
+      <div class="bk-chart" id="c-daily" data-source="daily"></div>
+    </section>
+    <section class="bk-card" id="rides-by-hour">
+      <h3>Rides by hour</h3>
+      <p class="hint">Average trips per hour. Weekdays peak at 8 am and 5 pm; weekends at midday</p>
+      <div class="bk-legend"><span><i style="background:var(--down)"></i>Weekdays</span><span><i style="background:var(--other)"></i>Weekends</span></div>
+      <div class="bk-chart" id="c-hourly" data-source="hourly"></div>
+    </section>
+  </div>
+
+  <h4 class="bk-section">Where the morning goes</h4>
+  <div class="bk-grid">
+    <section class="bk-card" id="departures-map">
+      <h3>Morning departures by station</h3>
+      <p class="hint">Weekday trips started 6–9 am, per day. The hill sits 30 m above downtown</p>
+      <div class="bk-legend"><span><i style="background:var(--hill)"></i>The Hill</span><span><i style="background:var(--down)"></i>Downtown</span><span><i style="background:var(--other)"></i>Other</span></div>
+      <div class="bk-chart tall" id="c-map" data-source="stations"></div>
+    </section>
+    <section class="bk-card" id="net-by-10">
+      <h3>Net bikes by 10 am</h3>
+      <p class="hint">Arrivals minus departures, 5–10 am on a typical weekday. Biggest losers and gainers</p>
+      <div class="bk-chart tall" id="c-net" data-source="stations"></div>
+    </section>
+  </div>
+  <div class="bk-grid">
+    <section class="bk-card" id="bikes-docked">
+      <h3>Bikes docked (est.), hill vs downtown</h3>
+      <p class="hint">Typical weekday. Assumes the hill dock starts full and the downtown dock starts empty at 5 am</p>
+      <div class="bk-legend"><span><i style="background:var(--hill)"></i><span data-source="ops" data-field="hill_station">—</span></span><span><i style="background:var(--down)"></i><span data-source="ops" data-field="downtown_station">—</span></span></div>
+      <div class="bk-chart" id="c-stock" data-source="stock"></div>
+    </section>
+    <section class="bk-card" id="empty-per-day">
+      <h3>Empty-dock moments per day (est.)</h3>
+      <p class="hint">Weekday mornings, July to September 2012</p>
+      <div class="bk-legend"><span><i style="background:var(--hill)"></i><span data-source="ops" data-field="hill_station">—</span></span><span><i style="background:var(--other)"></i>Everywhere else</span></div>
+      <div class="bk-chart" id="c-empty" data-source="empty_daily"></div>
+    </section>
+  </div>
+
+  <footer class="bk-foot" id="method">
+    <p><b>How the estimates work.</b> No dock-inventory data exists for 2012. An empty-dock moment is a departure beyond what a full dock could supply: each station starts the morning at its dock count, every trip moves one bike, and each departure that would take stock below zero counts once. Those bikes had to come from a van or a lucky arrival.</p>
+    <p>The Hill is Columbia Heights, Mount Pleasant, Adams Morgan and Park View: stations above 50 m, north of the Florida Ave escarpment. Downtown is the K St, Farragut, Metro Center and Penn Quarter core. Dock counts are today's, since 2012 counts are not published. Trip totals match the UCI Bike Sharing dataset within 1.1%.</p>
+  </footer>
+</div>
+
+<script>
+(() => {
+  const R = window.bk = window.bk || {};
+  const rider = () => dash.params().rider || 'All';
+  const fmtC = d3.format(',');
+  const fmtK = new Intl.NumberFormat('en', { notation: 'compact', maximumFractionDigits: 2 });
+  const parse = d3.utcParse('%Y-%m-%d');
+
+  dash.calc('growth', {
+    title: 'Trips vs 2011',
+    description: 'Change in total trips from 2011 to 2012, per rider group.',
+    inputs: ['kpis'],
+    fn: (kpis) => kpis.map((r) => ({ rider: r.rider, growth: r.trips / r.trips_2011 - 1 })),
+  });
+  dash.calc('am_delta', {
+    title: 'Morning share vs 2011',
+    description: 'Weekday 6–9 am share of weekday rides, 2012 minus 2011, in percentage points.',
+    inputs: ['kpis'],
+    fn: (kpis) => kpis.map((r) => ({ rider: r.rider, pp: (r.am_share - r.am_share_2011) * 100 })),
+  });
+
+  document.querySelectorAll('#rider-filter button').forEach((b) =>
+    b.addEventListener('click', () => dash.setParams({ rider: b.dataset.rider })));
+
+  const fail = (el) => { el.replaceChildren(); const d = document.createElement('div'); d.className = 'bk-fail'; d.textContent = 'Failed to load'; el.append(d); };
+  R.tip = (box) => {
+    let t = box.querySelector('.bk-tip');
+    if (!t) { t = document.createElement('div'); t.className = 'bk-tip'; t.hidden = true; box.append(t); }
+    return {
+      show(x, y, title, lines) {
+        t.replaceChildren();
+        const h = document.createElement('div'); h.className = 't'; h.textContent = title; t.append(h);
+        lines.forEach(([c, name, v]) => {
+          const l = document.createElement('div');
+          if (c) { const i = document.createElement('i'); i.style.background = c; l.append(i); }
+          l.append(document.createTextNode(name ? `${name}: ${v}` : v)); t.append(l);
+        });
+        t.hidden = false;
+        const bw = box.clientWidth, tw = t.offsetWidth;
+        t.style.left = Math.max(0, Math.min(bw - tw, x + 12)) + 'px';
+        t.style.top = Math.max(0, y - t.offsetHeight - 8) + 'px';
+      },
+      hide() { t.hidden = true; },
+    };
+  };
+  const css = (name) => getComputedStyle(document.querySelector('.bk')).getPropertyValue(name).trim();
+
+  function kpis() {
+    const r = rider();
+    document.querySelectorAll('#rider-filter button').forEach((b) => b.setAttribute('aria-pressed', String(b.dataset.rider === r)));
+    document.querySelectorAll('.kpi-r, .kpi-g').forEach((el) => el.setAttribute('data-where', 'rider=' + r));
+    document.querySelector('.kpi-rl').textContent = r === 'All' ? 'All riders' : r;
+    const k = dash.data('kpis'), g = dash.data('growth'), a = dash.data('am_delta'), o = dash.data('ops');
+    const row = k.status === 'ok' ? k.data.find((x) => x.rider === r) : null;
+    const set = (sel, v) => document.querySelectorAll(sel).forEach((el) => { el.textContent = v; el.classList.remove('dash-skeleton'); });
+    if (row) {
+      set('[data-source="kpis"][data-field="trips"]', fmtK.format(row.trips));
+      set('[data-source="kpis"][data-field="busiest_rides"]', fmtC(row.busiest_rides));
+      set('[data-source="kpis"][data-field="busiest_date"]', d3.utcFormat('%a, %b %-d')(parse(row.busiest_date)));
+      set('[data-source="kpis"][data-field="am_share"]', d3.format('.1%')(row.am_share));
+    }
+    const gr = g.status === 'ok' && g.data ? g.data.find((x) => x.rider === r) : null;
+    if (gr) set('[data-source="growth"]', d3.format('+.0%')(gr.growth));
+    const ar = a.status === 'ok' && a.data ? a.data.find((x) => x.rider === r) : null;
+    if (ar) set('[data-source="am_delta"]', d3.format('+.1f')(ar.pp) + ' pts');
+    if (o.status === 'ok') {
+      const op = o.data[0];
+      document.querySelectorAll('[data-source="ops"][data-field]').forEach((el) => {
+        const f = el.dataset.field, v = op[f];
+        el.textContent = f === 'empty_share_hill' ? d3.format('.0%')(v) : typeof v === 'number' && f !== 'year' ? fmtC(v) : v;
+        el.classList.remove('dash-skeleton');
+      });
+    }
+  }
+
+  function daily() {
+    const box = document.getElementById('c-daily'), d = dash.data('daily');
+    if (d.status === 'error') return fail(box);
+    if (d.status !== 'ok') return;
+    const rows = d.data.filter((x) => x.rider === rider()).map((x) => ({ ...x, date: parse(x.day) }));
+    const W = box.clientWidth, H = 220, m = { t: 8, r: 8, b: 22, l: 40 };
+    const x = d3.scaleUtc(d3.extent(rows, (r) => r.date), [m.l, W - m.r]);
+    const y = d3.scaleLinear([0, d3.max(rows, (r) => r.rides)], [H - m.b, m.t]).nice();
+    const svg = d3.create('svg').attr('width', '100%').attr('viewBox', `0 0 ${W} ${H}`).attr('height', H);
+    svg.append('g').attr('class', 'grid').selectAll('line').data(y.ticks(4)).join('line')
+      .attr('x1', m.l).attr('x2', W - m.r).attr('y1', y).attr('y2', y);
+    svg.append('g').attr('transform', `translate(${m.l - 6},0)`).selectAll('text').data(y.ticks(4)).join('text')
+      .attr('y', y).attr('dy', '0.32em').attr('text-anchor', 'end').text(d3.format('~s'));
+    svg.append('g').attr('class', 'axis').attr('transform', `translate(0,${H - m.b})`)
+      .call(d3.axisBottom(x).ticks(W < 420 ? 4 : 8).tickFormat(d3.utcFormat('%b')).tickSizeOuter(0))
+      .attr('font-size', null).attr('font-family', null);
+    const c = css('--down');
+    svg.append('path').datum(rows).attr('fill', 'none').attr('stroke', c).attr('stroke-opacity', 0.28).attr('stroke-width', 1)
+      .attr('d', d3.line((r) => x(r.date), (r) => y(r.rides)));
+    svg.append('path').datum(rows).attr('fill', 'none').attr('stroke', c).attr('stroke-width', 2).attr('stroke-linejoin', 'round').attr('stroke-linecap', 'round')
+      .attr('d', d3.line((r) => x(r.date), (r) => y(r.avg7)));
+    const dot = svg.append('circle').attr('r', 4).attr('fill', c).attr('hidden', true);
+    const tip = R.tip(box), bis = d3.bisector((r) => r.date).center;
+    svg.append('rect').attr('x', m.l).attr('y', m.t).attr('width', W - m.l - m.r).attr('height', H - m.t - m.b).attr('fill', 'transparent')
+      .on('pointermove', (ev) => {
+        const [px, py] = d3.pointer(ev), r = rows[bis(rows, x.invert(px))];
+        dot.attr('hidden', null).attr('cx', x(r.date)).attr('cy', y(r.avg7));
+        tip.show(x(r.date), y(r.avg7), d3.utcFormat('%a, %b %-d, %Y')(r.date), [[null, 'Rides', fmtC(r.rides)], [null, '7-day average', fmtC(Math.round(r.avg7))]]);
+      })
+      .on('pointerleave', () => { dot.attr('hidden', true); tip.hide(); });
+    box.querySelector('svg')?.remove(); box.prepend(svg.node());
+  }
+
+  function hourly() {
+    const box = document.getElementById('c-hourly'), d = dash.data('hourly');
+    if (d.status === 'error') return fail(box);
+    if (d.status !== 'ok') return;
+    const rows = d.data.filter((x) => x.rider === rider());
+    const W = box.clientWidth, H = 220, m = { t: 8, r: 8, b: 22, l: 36 };
+    const x = d3.scaleLinear([0, 23], [m.l, W - m.r]);
+    const y = d3.scaleLinear([0, d3.max(rows, (r) => Math.max(r.weekday, r.weekend))], [H - m.b, m.t]).nice();
+    const svg = d3.create('svg').attr('width', '100%').attr('viewBox', `0 0 ${W} ${H}`).attr('height', H);
+    svg.append('g').attr('class', 'grid').selectAll('line').data(y.ticks(4)).join('line').attr('x1', m.l).attr('x2', W - m.r).attr('y1', y).attr('y2', y);
+    svg.append('g').attr('transform', `translate(${m.l - 6},0)`).selectAll('text').data(y.ticks(4)).join('text').attr('y', y).attr('dy', '0.32em').attr('text-anchor', 'end').text(d3.format('~s'));
+    const hl = (h) => (h === 0 ? '12a' : h < 12 ? h + 'a' : h === 12 ? '12p' : h - 12 + 'p');
+    svg.append('g').attr('class', 'axis').attr('transform', `translate(0,${H - m.b})`)
+      .call(d3.axisBottom(x).tickValues([0, 3, 6, 9, 12, 15, 18, 21]).tickFormat(hl).tickSizeOuter(0)).attr('font-size', null).attr('font-family', null);
+    [['weekend', css('--other'), 0.10], ['weekday', css('--down'), 0.16]].forEach(([k, c, op]) => {
+      svg.append('path').datum(rows).attr('fill', c).attr('fill-opacity', op).attr('d', d3.area((r) => x(r.hour), y(0), (r) => y(r[k])));
+      svg.append('path').datum(rows).attr('fill', 'none').attr('stroke', c).attr('stroke-width', 2).attr('stroke-linejoin', 'round').attr('d', d3.line((r) => x(r.hour), (r) => y(r[k])));
+    });
+    const tip = R.tip(box), rule = svg.append('line').attr('stroke', 'var(--cds-chart-reference)').attr('y1', m.t).attr('y2', H - m.b).attr('hidden', true);
+    svg.append('rect').attr('x', m.l).attr('y', m.t).attr('width', W - m.l - m.r).attr('height', H - m.t - m.b).attr('fill', 'transparent')
+      .on('pointermove', (ev) => {
+        const h = Math.max(0, Math.min(23, Math.round(x.invert(d3.pointer(ev)[0])))), r = rows[h];
+        rule.attr('hidden', null).attr('x1', x(h)).attr('x2', x(h));
+        tip.show(x(h), y(Math.max(r.weekday, r.weekend)), `${hl(h).replace('a', ' am').replace('p', ' pm')}`, [[css('--down'), 'Weekdays', fmtC(Math.round(r.weekday))], [css('--other'), 'Weekends', fmtC(Math.round(r.weekend))]]);
+      })
+      .on('pointerleave', () => { rule.attr('hidden', true); tip.hide(); });
+    box.querySelector('svg')?.remove(); box.prepend(svg.node());
+  }
+
+  R.kpis = kpis; R.daily = daily; R.hourly = hourly; R.fail = fail; R.css = css; R.fmtC = fmtC; R.rider = rider;
+  dash.onData(() => { kpis(); daily(); hourly(); });
+})();
+</script>
+
+<script>
+(() => {
+  const R = window.bk;
+  const zc = (z) => R.css(z === 'The Hill' ? '--hill' : z === 'Downtown' ? '--down' : '--other');
+
+  function map() {
+    const box = document.getElementById('c-map'), d = dash.data('stations');
+    if (d.status === 'error') return R.fail(box);
+    if (d.status !== 'ok') return;
+    const key = 'dep_' + R.rider().toLowerCase();
+    // central DC + Arlington core; outlying stations clip to the frame edge
+    const rows = d.data.filter((s) => s.lat > 38.84 && s.lat < 38.96 && s.lon > -77.12 && s.lon < -76.96);
+    const W = box.clientWidth, H = Math.max(300, Math.min(420, W * 0.8));
+    const k = Math.cos(38.9 * Math.PI / 180);
+    const lonE = d3.extent(rows, (s) => s.lon), latE = d3.extent(rows, (s) => s.lat);
+    const sx = (W - 20) / ((lonE[1] - lonE[0]) * k), sy = (H - 20) / (latE[1] - latE[0]), s = Math.min(sx, sy);
+    const ox = (W - (lonE[1] - lonE[0]) * k * s) / 2, oy = (H - (latE[1] - latE[0]) * s) / 2;
+    const px = (lon) => ox + (lon - lonE[0]) * k * s, py = (lat) => H - oy - (lat - latE[0]) * s;
+    const r = d3.scaleSqrt([0, d3.max(rows, (x) => x[key]) || 1], [1.5, W < 420 ? 11 : 15]);
+    const svg = d3.create('svg').attr('width', '100%').attr('viewBox', `0 0 ${W} ${H}`).attr('height', H);
+    const order = { Other: 0, Downtown: 1, 'The Hill': 2 };
+    const sorted = [...rows].sort((a, b) => order[a.zone] - order[b.zone] || b[key] - a[key]);
+    const tip = R.tip(box);
+    svg.append('g').selectAll('circle').data(sorted).join('circle')
+      .attr('cx', (x) => px(x.lon)).attr('cy', (x) => py(x.lat)).attr('r', (x) => r(x[key]))
+      .attr('fill', (x) => zc(x.zone)).attr('fill-opacity', (x) => (x.zone === 'Other' ? 0.45 : 0.8))
+      .attr('stroke', 'var(--color-panel)').attr('stroke-width', 1)
+      .on('pointerenter', (ev, x) => tip.show(px(x.lon), py(x.lat), x.name, [[zc(x.zone), null, x.zone + ' · ' + x.elev_m + ' m'], [null, 'Departures 6–9 am', x[key].toFixed(1) + ' per weekday'], [null, 'Net by 10 am', (x.net_am > 0 ? '+' : '') + x.net_am.toFixed(1)]]))
+      .on('pointerleave', () => tip.hide());
+    const lab = (zone, text) => {
+      const z = rows.filter((x) => x.zone === zone); if (!z.length) return;
+      const cx = d3.mean(z, (x) => px(x.lon)), top = d3.min(z, (x) => py(x.lat));
+      svg.append('text').attr('class', 'lab-strong').attr('x', cx).attr('y', Math.max(12, top - 14)).attr('text-anchor', 'middle').text(text);
+    };
+    lab('The Hill', 'The Hill');
+    const dz = rows.filter((x) => x.zone === 'Downtown');
+    if (dz.length) svg.append('text').attr('class', 'lab-strong').attr('x', d3.mean(dz, (x) => px(x.lon))).attr('y', d3.max(dz, (x) => py(x.lat)) + 22).attr('text-anchor', 'middle').text('Downtown');
+    box.querySelector('svg')?.remove(); box.prepend(svg.node());
+  }
+
+  function net() {
+    const box = document.getElementById('c-net'), d = dash.data('stations');
+    if (d.status === 'error') return R.fail(box);
+    if (d.status !== 'ok') return;
+    const s = [...d.data].sort((a, b) => a.net_am - b.net_am);
+    const n = box.clientWidth < 420 ? 6 : 8;
+    const rows = [...s.slice(0, n), ...s.slice(-n)];
+    const W = box.clientWidth, bh = 16, gap = 4, H = rows.length * (bh + gap) + 24;
+    const short = (t) => t.split(' / ')[0];
+    const ctx = document.createElement('canvas').getContext('2d'); ctx.font = '11px sans-serif';
+    const lw = Math.min(W * 0.42, d3.max(rows, (x) => ctx.measureText(short(x.name)).width) + 10);
+    const x = d3.scaleLinear([d3.min(rows, (r) => r.net_am), d3.max(rows, (r) => r.net_am)], [lw + 30, W - 34]).nice();
+    const svg = d3.create('svg').attr('width', '100%').attr('viewBox', `0 0 ${W} ${H}`).attr('height', H);
+    svg.append('line').attr('x1', x(0)).attr('x2', x(0)).attr('y1', 0).attr('y2', H - 20).attr('stroke', 'var(--cds-chart-axis)');
+    const g = svg.append('g').selectAll('g').data(rows).join('g').attr('transform', (r, i) => `translate(0,${i * (bh + gap) + (i >= n ? 8 : 0)})`);
+    g.append('rect').attr('x', (r) => Math.min(x(0), x(r.net_am))).attr('width', (r) => Math.abs(x(r.net_am) - x(0))).attr('height', bh).attr('rx', 4)
+      .attr('fill', (r) => (r.net_am < 0 ? (r.zone === 'The Hill' ? R.css('--hill') : R.css('--other')) : (r.zone === 'Downtown' ? R.css('--down') : R.css('--other'))));
+    g.append('text').attr('x', 0).attr('y', bh / 2).attr('dy', '0.32em').text((r) => short(r.name))
+      .attr('class', (r) => (r.zone === 'The Hill' && r.net_am < 0) || (r.zone === 'Downtown' && r.net_am > 0) ? 'lab-strong' : null)
+      .each(function (r) { while (this.getComputedTextLength() > lw - 6 && this.textContent.length > 4) this.textContent = this.textContent.slice(0, -2) + '…'; });
+    g.append('text').attr('x', (r) => x(r.net_am) + (r.net_am < 0 ? -4 : 4)).attr('y', bh / 2).attr('dy', '0.32em')
+      .attr('text-anchor', (r) => (r.net_am < 0 ? 'end' : 'start')).text((r) => (r.net_am > 0 ? '+' : '') + Math.round(r.net_am));
+    svg.append('text').attr('x', x(0)).attr('y', H - 4).attr('text-anchor', 'middle').text('bikes per weekday, 5–10 am');
+    box.querySelector('svg')?.remove(); box.prepend(svg.node());
+  }
+
+  R.map = map; R.net = net; R.zc = zc;
+  dash.onData(() => { map(); net(); });
+})();
+</script>
+
+<script>
+(() => {
+  const R = window.bk;
+  const fmtT = (m) => { const h = Math.floor(m / 60), mm = m % 60; return `${h > 12 ? h - 12 : h}:${String(mm).padStart(2, '0')} ${h >= 12 ? 'pm' : 'am'}`; };
+
+  function stock() {
+    const box = document.getElementById('c-stock'), d = dash.data('stock'), o = dash.data('ops');
+    if (d.status === 'error') return R.fail(box);
+    if (d.status !== 'ok' || o.status !== 'ok') return;
+    const rows = d.data, op = o.data[0];
+    const W = box.clientWidth, H = 220, m = { t: 12, r: 12, b: 22, l: 30 };
+    const x = d3.scaleLinear(d3.extent(rows, (r) => r.minute), [m.l, W - m.r]);
+    const y = d3.scaleLinear([0, Math.max(op.hill_station_docks, op.downtown_station_docks)], [H - m.b, m.t]).nice();
+    const svg = d3.create('svg').attr('width', '100%').attr('viewBox', `0 0 ${W} ${H}`).attr('height', H);
+    svg.append('g').attr('class', 'grid').selectAll('line').data(y.ticks(4)).join('line').attr('x1', m.l).attr('x2', W - m.r).attr('y1', y).attr('y2', y);
+    svg.append('g').attr('transform', `translate(${m.l - 6},0)`).selectAll('text').data(y.ticks(4)).join('text').attr('y', y).attr('dy', '0.32em').attr('text-anchor', 'end').text((v) => v);
+    svg.append('g').attr('class', 'axis').attr('transform', `translate(0,${H - m.b})`)
+      .call(d3.axisBottom(x).tickValues(d3.range(300, 601, 60)).tickFormat((v) => fmtT(v).replace(':00', '')).tickSizeOuter(0)).attr('font-size', null).attr('font-family', null);
+    [['downtown', R.css('--down')], ['hill', R.css('--hill')]].forEach(([k, c]) =>
+      svg.append('path').datum(rows).attr('fill', 'none').attr('stroke', c).attr('stroke-width', 2).attr('stroke-linejoin', 'round')
+        .attr('d', d3.line((r) => x(r.minute), (r) => y(r[k])).curve(d3.curveStepAfter)));
+    const e = rows.find((r) => r.hill <= 0.5);
+    if (e) {
+      svg.append('line').attr('x1', x(e.minute)).attr('x2', x(e.minute)).attr('y1', m.t).attr('y2', H - m.b).attr('stroke', 'var(--cds-chart-reference)').attr('stroke-dasharray', '3 3');
+      svg.append('text').attr('class', 'lab-strong').attr('x', x(e.minute) + (x(e.minute) > W - 110 ? -6 : 6)).attr('y', m.t + 10)
+        .attr('text-anchor', x(e.minute) > W - 110 ? 'end' : 'start').text('Empty by ' + e.time);
+    }
+    const tip = R.tip(box), bis = d3.bisector((r) => r.minute).center;
+    svg.append('rect').attr('x', m.l).attr('y', m.t).attr('width', W - m.l - m.r).attr('height', H - m.t - m.b).attr('fill', 'transparent')
+      .on('pointermove', (ev) => { const r = rows[bis(rows, x.invert(d3.pointer(ev)[0]))];
+        tip.show(x(r.minute), y(Math.max(r.hill, r.downtown)), r.time, [[R.css('--hill'), 'Hill', r.hill.toFixed(1)], [R.css('--down'), 'Downtown', r.downtown.toFixed(1)]]); })
+      .on('pointerleave', () => tip.hide());
+    box.querySelector('svg')?.remove(); box.prepend(svg.node());
+  }
+
+  function empty() {
+    const box = document.getElementById('c-empty'), d = dash.data('empty_daily');
+    if (d.status === 'error') return R.fail(box);
+    if (d.status !== 'ok') return;
+    const parse = d3.utcParse('%Y-%m-%d'), rows = d.data.map((r) => ({ ...r, date: parse(r.day) }));
+    const W = box.clientWidth, H = 220, m = { t: 8, r: 8, b: 22, l: 30 };
+    const x = d3.scaleBand(rows.map((r) => r.day), [m.l, W - m.r]).padding(0.2);
+    const y = d3.scaleLinear([0, d3.max(rows, (r) => r.hill_station + r.elsewhere)], [H - m.b, m.t]).nice();
+    const svg = d3.create('svg').attr('width', '100%').attr('viewBox', `0 0 ${W} ${H}`).attr('height', H);
+    svg.append('g').attr('class', 'grid').selectAll('line').data(y.ticks(4)).join('line').attr('x1', m.l).attr('x2', W - m.r).attr('y1', y).attr('y2', y);
+    svg.append('g').attr('transform', `translate(${m.l - 6},0)`).selectAll('text').data(y.ticks(4)).join('text').attr('y', y).attr('dy', '0.32em').attr('text-anchor', 'end').text((v) => v);
+    const firsts = rows.filter((r, i) => i === 0 || r.date.getUTCMonth() !== rows[i - 1].date.getUTCMonth());
+    svg.append('g').selectAll('text').data(firsts).join('text').attr('x', (r) => x(r.day)).attr('y', H - 6).text((r) => d3.utcFormat('%b')(r.date));
+    const g = svg.append('g').selectAll('g').data(rows).join('g');
+    g.append('rect').attr('x', (r) => x(r.day)).attr('width', x.bandwidth()).attr('y', (r) => y(r.hill_station)).attr('height', (r) => y(0) - y(r.hill_station)).attr('fill', R.css('--hill'));
+    g.append('rect').attr('x', (r) => x(r.day)).attr('width', x.bandwidth()).attr('y', (r) => y(r.hill_station + r.elsewhere)).attr('height', (r) => y(r.hill_station) - y(r.hill_station + r.elsewhere)).attr('fill', R.css('--other'));
+    const tip = R.tip(box);
+    g.append('rect').attr('x', (r) => x(r.day)).attr('width', x.bandwidth()).attr('y', m.t).attr('height', H - m.t - m.b).attr('fill', 'transparent')
+      .on('pointerenter', (ev, r) => tip.show(x(r.day), y(r.hill_station + r.elsewhere), d3.utcFormat('%a, %b %-d')(r.date), [[R.css('--hill'), 'Hill station', r.hill_station], [R.css('--other'), 'Everywhere else', r.elsewhere]]))
+      .on('pointerleave', () => tip.hide());
+    box.querySelector('svg')?.remove(); box.prepend(svg.node());
+  }
+
+  dash.onData(() => { stock(); empty(); });
+})();
+</script>

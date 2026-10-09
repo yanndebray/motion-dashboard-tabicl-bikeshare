@@ -1,0 +1,312 @@
+<style>
+  .fc { --hill: #E0951B; --down: #2A9187; --other: var(--cds-chart-muted); font-family: var(--font-anthropic-sans); display: grid; gap: var(--cds-gap-lg); }
+  .fc-head { display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: var(--cds-gap-md); }
+  .fc-head > div { min-width: 0; }
+  .fc-eyebrow { font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); letter-spacing: .04em; }
+  .fc-title { font-family: var(--font-anthropic-serif); font-weight: 400; font-size: var(--cds-font-size-title); margin: 0; text-wrap: balance; }
+  .fc-sub { color: var(--color-fg-muted); margin: 2px 0 0; font-variant-numeric: tabular-nums; }
+  .fc-take { margin: var(--cds-gap-sm) 0 0; max-width: 72ch; }
+  .fc .fc-take b { font-weight: 600; }
+  .fc-controls { display: flex; flex-wrap: wrap; gap: var(--cds-gap-sm); align-items: center; }
+  .fc-seg { display: inline-flex; border: 1px solid var(--color-border-line); border-radius: var(--cds-radius); padding: 2px; gap: 2px; background: var(--color-panel); }
+  .fc-seg button { font: inherit; font-size: var(--cds-font-size-caption); border: 0; background: transparent; color: var(--color-fg-muted); padding: var(--cds-pad-xs) var(--cds-pad-sm); border-radius: calc(var(--cds-radius) - 2px); cursor: pointer; }
+  .fc-seg button[aria-pressed="true"] { background: var(--color-bg); color: var(--color-fg); box-shadow: 0 0 0 1px var(--color-border-line); }
+  .fc-seg button:focus-visible { outline: 2px solid var(--down); outline-offset: 1px; }
+  .fc-lbl { font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); }
+  .fc-kpis { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 10.5rem), 1fr)); gap: var(--cds-gap-md); }
+  .fc-kpi { background: var(--color-panel); border: 1px solid var(--color-border-line); border-radius: var(--cds-radius); padding: var(--cds-pad-md) var(--cds-pad-lg); display: grid; gap: 4px; align-content: start; }
+  .fc-kpi.is-hill { box-shadow: inset 0 3px 0 var(--hill); }
+  .fc-kpi.is-down { box-shadow: inset 0 3px 0 var(--down); }
+  .fc-kpi .lbl { font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); }
+  .fc-kpi .val { font-family: var(--font-anthropic-serif); font-weight: 400; font-size: var(--cds-font-size-title); line-height: 1.1; font-variant-numeric: tabular-nums; }
+  .fc-kpi .note { font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); font-variant-numeric: tabular-nums; }
+  .fc-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 22rem), 1fr)); gap: var(--cds-gap-md); }
+  .fc-card { background: var(--color-panel); border: 1px solid var(--color-border-line); border-radius: var(--cds-radius); padding: var(--cds-pad-lg); min-width: 0; display: grid; gap: var(--cds-gap-sm); align-content: start; }
+  .fc-card.wide { grid-column: 1 / -1; }
+  .fc-card h3 { margin: 0; font-size: var(--cds-font-size-heading); font-weight: var(--cds-font-weight-medium); }
+  .fc-card .hint { margin: 0; font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); }
+  .fc-chart { position: relative; min-height: 240px; }
+  .fc-chart svg { display: block; overflow: visible; }
+  .fc-chart text { fill: var(--color-fg-muted); font-size: 11px; font-family: var(--font-anthropic-sans); }
+  .fc-chart .strong { fill: var(--color-fg); font-weight: 600; }
+  .fc-chart .grid line { stroke: var(--cds-chart-grid); }
+  .fc-chart .axis path, .fc-chart .axis line { stroke: var(--cds-chart-axis); }
+  .fc-legend { display: flex; flex-wrap: wrap; gap: var(--cds-gap-md); font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); }
+  .fc-legend i { display: inline-block; width: 10px; height: 10px; border-radius: 3px; margin-right: 6px; vertical-align: -1px; }
+  .fc-tip { position: absolute; pointer-events: none; background: var(--cds-surface-popover); border: 1px solid var(--cds-border); border-radius: var(--cds-radius); box-shadow: var(--cds-shadow-popover); padding: var(--cds-pad-xs) var(--cds-pad-sm); font-size: var(--cds-font-size-caption); white-space: nowrap; z-index: 2; font-variant-numeric: tabular-nums; }
+  .fc-tip .t { color: var(--cds-text-secondary); margin-bottom: 2px; }
+  .fc-tip i { display: inline-block; width: 8px; height: 8px; border-radius: 2px; margin-right: 6px; }
+  .fc-table-wrap { overflow-x: auto; }
+  .fc-table { width: 100%; border-collapse: collapse; font-size: var(--cds-font-size-caption); font-variant-numeric: tabular-nums; }
+  .fc-table th, .fc-table td { text-align: left; padding: 6px 10px; border-bottom: 1px solid var(--color-border-line); white-space: nowrap; }
+  .fc-table th { color: var(--color-fg-muted); font-weight: 500; }
+  .fc-table td.num, .fc-table th.num { text-align: right; }
+  .fc-foot { font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); max-width: 92ch; display: grid; gap: 4px; }
+  .fc-foot p { margin: 0; }
+  .fc-foot b { color: var(--color-fg); font-weight: 600; }
+  .fc-fail { display: flex; align-items: center; justify-content: center; gap: 6px; min-height: inherit; color: var(--color-fg-muted); font-size: var(--cds-font-size-caption); }
+  .fc-fail::before { content: ""; width: .375rem; height: .375rem; border-radius: 50%; background: var(--color-bad); }
+  [data-dash-source-state=empty] { color: transparent; }
+  [data-dash-source-state=refreshing] { opacity: .5; transition: opacity var(--cds-dur-slow); }
+</style>
+
+<div class="fc" id="forecast">
+  <header class="fc-head">
+    <div>
+      <div class="fc-eyebrow">Capital Bikeshare · The Hill · TabICL</div>
+      <h2 class="fc-title">Hill morning forecast</h2>
+      <p class="fc-sub">Held out: <span data-source="ml_kpis" data-field="test_days">—</span> weekdays, July to December 2012. Each forecast uses only what was known before that morning</p>
+      <p class="fc-take" id="takeaway">TabICL forecasts the bikes to carry uphill within <b data-source="ml_kpis" data-field="t1_mae_tabicl">—</b> bikes a day on average (gradient boosting: <span data-source="ml_kpis" data-field="t1_mae_hgb">—</span>) and ranks which hill stations will be empty by 9 am with an AUC of <b data-source="ml_kpis" data-field="t2_auc_tabicl">—</b>. The local model and api.tabicl.org agree to r = <span data-source="ml_kpis" data-field="agreement_min">—</span> or better.</p>
+    </div>
+    <div class="fc-controls">
+      <span class="fc-lbl" id="be-lbl">Run on</span>
+      <div class="fc-seg" role="group" aria-labelledby="be-lbl" id="backend-filter">
+        <button type="button" data-be="api" aria-pressed="true">api.tabicl.org</button>
+        <button type="button" data-be="local" aria-pressed="false">Local</button>
+      </div>
+    </div>
+  </header>
+
+  <section class="fc-kpis" id="kpis" aria-label="Headline figures">
+    <div class="fc-kpi is-hill"><span class="lbl">Error, bikes to carry uphill</span><span class="val"><span data-source="ml_kpis" data-field="t1_mae_tabicl">—</span></span><span class="note">bikes a day (MAE). Gradient boosting <span data-source="ml_kpis" data-field="t1_mae_hgb">—</span>, yesterday's value <span data-source="ml_kpis" data-field="t1_mae_yesterday">—</span></span></div>
+    <div class="fc-kpi"><span class="lbl">Days inside the 80% band</span><span class="val" data-source="ml_kpis" data-field="t1_cov80">—</span><span class="note">TabICL quantiles, 10th to 90th</span></div>
+    <div class="fc-kpi is-hill"><span class="lbl">Empty by 9 am, AUC</span><span class="val" data-source="ml_kpis" data-field="t2_auc_tabicl">—</span><span class="note">Gradient boosting <span data-source="ml_kpis" data-field="t2_auc_hgb">—</span>, over <span data-source="ml_kpis" data-field="test_rows_t2">—</span> station-days</span></div>
+    <div class="fc-kpi"><span class="lbl">Empty by 9 am, average precision</span><span class="val" data-source="ml_kpis" data-field="t2_ap_tabicl">—</span><span class="note">Gradient boosting <span data-source="ml_kpis" data-field="t2_ap_hgb">—</span></span></div>
+    <div class="fc-kpi is-down"><span class="lbl">Hourly hill departures, error</span><span class="val" data-source="ml_kpis" data-field="t3_mae_tabicl">—</span><span class="note">rides an hour, Dec 18–31. Same hour last week <span data-source="ml_kpis" data-field="t3_mae_naive">—</span></span></div>
+    <div class="fc-kpi is-down"><span class="lbl">Local vs API agreement</span><span class="val" data-source="ml_kpis" data-field="agreement_min">—</span><span class="note">lowest correlation across the three tasks</span></div>
+  </section>
+
+  <div class="fc-grid">
+    <section class="fc-card wide" id="bikes-uphill">
+      <h3>Bikes to carry uphill, forecast vs actual</h3>
+      <p class="hint">Net bikes lost by the hill stations, 5–10 am, per weekday. TabICL predicts the change from the last five weekdays&#39; average</p>
+      <div class="fc-legend"><span><i style="background:var(--hill)"></i>Actual</span><span><i style="background:var(--down)"></i>TabICL forecast, 80% band shaded</span><span><i style="background:var(--other)"></i>Gradient boosting</span></div>
+      <div class="fc-chart" id="c-t1" data-source="t1_series"></div>
+    </section>
+  </div>
+
+  <div class="fc-grid">
+    <section class="fc-card" id="scoreboard-t1">
+      <h3>Which model forecasts best</h3>
+      <p class="hint">Mean absolute error, bikes a day, held-out weekdays. Lower is better</p>
+      <div class="fc-chart" id="c-score" data-source="scoreboard"></div>
+    </section>
+    <section class="fc-card" id="calibration">
+      <h3>Are the empty-dock odds honest?</h3>
+      <p class="hint">Predicted chance a hill station is empty by 9 am vs how often it was. On the line is calibrated; dot size is station-days</p>
+      <div class="fc-chart" id="c-cal" data-source="t2_calibration"></div>
+    </section>
+  </div>
+
+  <div class="fc-grid">
+    <section class="fc-card" id="station-risk">
+      <h3>Risk by hill station</h3>
+      <p class="hint">Average predicted chance of an empty dock by 9 am (bar) vs the observed rate (tick), July to December 2012</p>
+      <div class="fc-chart" id="c-stn" data-source="t2_stations"></div>
+    </section>
+    <section class="fc-card" id="hourly">
+      <h3>Hourly rides, next 14 days</h3>
+      <p class="hint">Forecast made on Dec 17, 2012 for Dec 18–31. Local uses 108 days of history; the API takes 28</p>
+      <div class="fc-controls"><div class="fc-seg" role="group" aria-label="Series" id="item-filter">
+        <button type="button" data-item="Hill departures" aria-pressed="true">Hill departures</button>
+        <button type="button" data-item="Whole system" aria-pressed="false">Whole system</button>
+      </div></div>
+      <div class="fc-legend"><span><i style="background:var(--hill)"></i>Actual</span><span><i style="background:var(--down)"></i>TabICL, 80% band</span><span><i style="background:var(--other)"></i>Same hour last week</span></div>
+      <div class="fc-chart" id="c-t3" data-source="t3_series"></div>
+    </section>
+  </div>
+
+  <section class="fc-card" id="backends">
+    <h3>Local vs api.tabicl.org</h3>
+    <p class="hint">Same CSVs, same model family. Seconds are wall time from this laptop (Apple GPU) and from the hosted endpoint</p>
+    <div class="fc-table-wrap">
+      <table class="fc-table" data-source="backends" data-row-key="task">
+        <thead><tr><th data-field="task">Task</th><th class="num" data-field="local_secs">Local, s</th><th class="num" data-field="api_secs">API, s</th><th data-field="local_context">Local context</th><th data-field="api_context">API context</th><th class="num" data-field="corr">Correlation</th></tr></thead>
+        <tbody></tbody>
+      </table>
+    </div>
+  </section>
+
+  <footer class="fc-foot" id="method">
+    <p><b>Three tasks.</b> Bikes to carry uphill is regression on 372 training weekdays (Jan 2011 to Jun 2012): calendar, the 6–9 am weather from the UCI hourly data, yesterday&#39;s value and the last five weekdays&#39; average. Empty by 9 am is classification per hill station and weekday, using the same estimate as the overview dashboard (a dock that starts full and runs out). Hourly rides uses TabICL&#39;s time-series forecaster on two series.</p>
+    <p><b>What the hosted API needs.</b> /v1/infer timed out (HTTP 524 after about 100 s) with 4,464 context rows, so the API run keeps the 2,000 most recent and sends the test set in six chunks. /v1/forecast refused 56 days of hourly history (HTTP 503) and accepts 28. The local run with the full 4,464 rows scored AUC 0.940; with the same 2,000 rows it matches the API.</p>
+    <p><b>One change that mattered.</b> Predicting the raw count, TabICL ran 20 bikes low because summer 2012 set new highs and it leaned on 2011 days. Predicting the change from the recent level cut its error from 34 to 22 bikes.</p>
+  </footer>
+</div>
+
+<script>
+(() => {
+  const F = window.fc = {};
+  F.be = () => dash.params().backend || 'api';
+  F.item = () => dash.params().item || 'Hill departures';
+  F.css = (n) => getComputedStyle(document.querySelector('.fc')).getPropertyValue(n).trim();
+  F.fail = (el) => { el.replaceChildren(); const d = document.createElement('div'); d.className = 'fc-fail'; d.textContent = 'Failed to load'; el.append(d); };
+  F.tip = (box) => {
+    let t = box.querySelector('.fc-tip');
+    if (!t) { t = document.createElement('div'); t.className = 'fc-tip'; t.hidden = true; box.append(t); }
+    return {
+      show(x, y, title, lines) {
+        t.replaceChildren();
+        const h = document.createElement('div'); h.className = 't'; h.textContent = title; t.append(h);
+        lines.forEach(([c, name, v]) => {
+          const l = document.createElement('div');
+          if (c) { const i = document.createElement('i'); i.style.background = c; l.append(i); }
+          l.append(document.createTextNode(name ? `${name}: ${v}` : v)); t.append(l);
+        });
+        t.hidden = false;
+        t.style.left = Math.max(0, Math.min(box.clientWidth - t.offsetWidth, x + 12)) + 'px';
+        t.style.top = Math.max(0, y - t.offsetHeight - 8) + 'px';
+      },
+      hide() { t.hidden = true; },
+    };
+  };
+  F.frame = (box, H, m) => {
+    const W = box.clientWidth;
+    const svg = d3.create('svg').attr('width', '100%').attr('viewBox', `0 0 ${W} ${H}`).attr('height', H);
+    return { W, H, svg, put() { box.querySelector('svg')?.remove(); box.prepend(svg.node()); } };
+  };
+  F.yaxis = (svg, y, x0, x1, fmt) => {
+    svg.append('g').attr('class', 'grid').selectAll('line').data(y.ticks(4)).join('line').attr('x1', x0).attr('x2', x1).attr('y1', y).attr('y2', y);
+    svg.append('g').attr('transform', `translate(${x0 - 6},0)`).selectAll('text').data(y.ticks(4)).join('text').attr('y', y).attr('dy', '0.32em').attr('text-anchor', 'end').text(fmt || d3.format('~s'));
+  };
+
+  document.querySelectorAll('#backend-filter button').forEach((b) => b.addEventListener('click', () => dash.setParams({ backend: b.dataset.be })));
+  document.querySelectorAll('#item-filter button').forEach((b) => b.addEventListener('click', () => dash.setParams({ item: b.dataset.item })));
+
+  function kpis() {
+    document.querySelectorAll('#backend-filter button').forEach((b) => b.setAttribute('aria-pressed', String(b.dataset.be === F.be())));
+    document.querySelectorAll('#item-filter button').forEach((b) => b.setAttribute('aria-pressed', String(b.dataset.item === F.item())));
+    const k = dash.data('ml_kpis');
+    if (k.status !== 'ok') return;
+    const r = k.data[0];
+    const f = { t1_cov80: d3.format('.0%'), t2_auc_tabicl: d3.format('.2f'), t2_auc_hgb: d3.format('.2f'), t2_ap_tabicl: d3.format('.2f'), t2_ap_hgb: d3.format('.2f'), agreement_min: d3.format('.2f') };
+    document.querySelectorAll('[data-source="ml_kpis"]').forEach((el) => { const fl = el.dataset.field; el.textContent = (f[fl] || ((v) => d3.format(',')(v)))(r[fl]); });
+  }
+
+  function t1() {
+    const box = document.getElementById('c-t1'), d = dash.data('t1_series');
+    if (d.status === 'error') return F.fail(box);
+    if (d.status !== 'ok') return;
+    const be = F.be(), parse = d3.utcParse('%Y-%m-%d');
+    const rows = d.data.map((r) => ({ ...r, date: parse(r.day), mean: r[be + '_mean'], lo: r[be + '_q10'], hi: r[be + '_q90'] }));
+    const fr = F.frame(box, 260), m = { t: 10, r: 10, b: 22, l: 38 }, { W, H, svg } = fr;
+    const x = d3.scaleUtc(d3.extent(rows, (r) => r.date), [m.l, W - m.r]);
+    const y = d3.scaleLinear([0, d3.max(rows, (r) => Math.max(r.actual, r.hi))], [H - m.b, m.t]).nice();
+    F.yaxis(svg, y, m.l, W - m.r, (v) => v);
+    svg.append('g').attr('class', 'axis').attr('transform', `translate(0,${H - m.b})`).call(d3.axisBottom(x).ticks(W < 480 ? 3 : 6).tickFormat(d3.utcFormat('%b')).tickSizeOuter(0)).attr('font-size', null).attr('font-family', null);
+    svg.append('path').datum(rows).attr('fill', F.css('--down')).attr('fill-opacity', 0.16).attr('d', d3.area((r) => x(r.date), (r) => y(r.lo), (r) => y(r.hi)));
+    svg.append('path').datum(rows).attr('fill', 'none').attr('stroke', F.css('--other')).attr('stroke-width', 1.5).attr('stroke-dasharray', '4 3').attr('d', d3.line((r) => x(r.date), (r) => y(r.hgb)));
+    svg.append('path').datum(rows).attr('fill', 'none').attr('stroke', F.css('--down')).attr('stroke-width', 2).attr('stroke-linejoin', 'round').attr('d', d3.line((r) => x(r.date), (r) => y(r.mean)));
+    svg.append('g').selectAll('circle').data(rows).join('circle').attr('cx', (r) => x(r.date)).attr('cy', (r) => y(r.actual)).attr('r', 2.6).attr('fill', F.css('--hill'));
+    const tip = F.tip(box), bis = d3.bisector((r) => r.date).center, rule = svg.append('line').attr('stroke', 'var(--cds-chart-reference)').attr('y1', m.t).attr('y2', H - m.b).attr('hidden', true);
+    svg.append('rect').attr('x', m.l).attr('y', m.t).attr('width', W - m.l - m.r).attr('height', H - m.t - m.b).attr('fill', 'transparent')
+      .on('pointermove', (ev) => { const r = rows[bis(rows, x.invert(d3.pointer(ev)[0]))]; rule.attr('hidden', null).attr('x1', x(r.date)).attr('x2', x(r.date));
+        tip.show(x(r.date), y(Math.max(r.actual, r.hi)), d3.utcFormat('%a, %b %-d, %Y')(r.date), [[F.css('--hill'), 'Actual', r.actual], [F.css('--down'), 'TabICL', `${Math.round(r.mean)} (${Math.round(r.lo)}–${Math.round(r.hi)})`], [F.css('--other'), 'Gradient boosting', Math.round(r.hgb)]]); })
+      .on('pointerleave', () => { rule.attr('hidden', true); tip.hide(); });
+    fr.put();
+  }
+
+  function score() {
+    const box = document.getElementById('c-score'), d = dash.data('scoreboard');
+    if (d.status === 'error') return F.fail(box);
+    if (d.status !== 'ok') return;
+    const rows = d.data.filter((r) => r.task === 'Bikes to carry uphill' && r.mae != null).sort((a, b) => a.mae - b.mae);
+    const bh = 18, gap = 6, fr = F.frame(box, rows.length * (bh + gap) + 8), { W, svg } = fr;
+    const ctx = document.createElement('canvas').getContext('2d'); ctx.font = '11px sans-serif';
+    const lw = Math.min(W * 0.55, d3.max(rows, (r) => ctx.measureText(r.model).width) + 12);
+    const x = d3.scaleLinear([0, d3.max(rows, (r) => r.mae)], [lw, W - 36]);
+    const g = svg.append('g').selectAll('g').data(rows).join('g').attr('transform', (r, i) => `translate(0,${i * (bh + gap)})`);
+    const isT = (r) => r.model.startsWith('TabICL'), isBest = (r) => r.model.includes('level-adjusted') && isT(r);
+    g.append('rect').attr('x', lw).attr('width', (r) => x(r.mae) - lw).attr('height', bh).attr('rx', 4).attr('fill', (r) => (isBest(r) ? F.css('--down') : isT(r) ? F.css('--down') : F.css('--other'))).attr('fill-opacity', (r) => (isBest(r) ? 1 : isT(r) ? 0.45 : 1));
+    g.append('text').attr('x', 0).attr('y', bh / 2).attr('dy', '0.32em').attr('class', (r) => (isBest(r) ? 'strong' : null)).text((r) => r.model)
+      .each(function () { while (this.getComputedTextLength() > lw - 8 && this.textContent.length > 4) this.textContent = this.textContent.slice(0, -2) + '…'; });
+    g.append('text').attr('x', (r) => x(r.mae) + 4).attr('y', bh / 2).attr('dy', '0.32em').text((r) => r.mae.toFixed(1));
+    fr.put();
+  }
+
+  F.kpis = kpis;
+  dash.onData(() => { kpis(); t1(); score(); });
+})();
+</script>
+
+<script>
+(() => {
+  const F = window.fc;
+  function cal() {
+    const box = document.getElementById('c-cal'), d = dash.data('t2_calibration');
+    if (d.status === 'error') return F.fail(box);
+    if (d.status !== 'ok') return;
+    const rows = d.data.filter((r) => r.backend === F.be());
+    const fr = F.frame(box, 260), m = { t: 10, r: 14, b: 30, l: 38 }, { W, H, svg } = fr;
+    const side = Math.min(W - m.l - m.r, H - m.t - m.b);
+    const x = d3.scaleLinear([0, 1], [m.l, m.l + side]), y = d3.scaleLinear([0, 1], [m.t + side, m.t]);
+    F.yaxis(svg, y, m.l, m.l + side, d3.format('.0%'));
+    svg.append('g').attr('class', 'axis').attr('transform', `translate(0,${m.t + side})`).call(d3.axisBottom(x).ticks(4).tickFormat(d3.format('.0%')).tickSizeOuter(0)).attr('font-size', null).attr('font-family', null);
+    svg.append('text').attr('x', m.l + side / 2).attr('y', m.t + side + 28).attr('text-anchor', 'middle').text('predicted');
+    svg.append('line').attr('x1', x(0)).attr('y1', y(0)).attr('x2', x(1)).attr('y2', y(1)).attr('stroke', 'var(--cds-chart-reference)').attr('stroke-dasharray', '4 4');
+    const r = d3.scaleSqrt([0, d3.max(rows, (v) => v.n)], [3, 14]);
+    svg.append('path').datum(rows).attr('fill', 'none').attr('stroke', F.css('--down')).attr('stroke-width', 2).attr('d', d3.line((v) => x(v.predicted), (v) => y(v.observed)));
+    const tip = F.tip(box);
+    svg.append('g').selectAll('circle').data(rows).join('circle').attr('cx', (v) => x(v.predicted)).attr('cy', (v) => y(v.observed)).attr('r', (v) => r(v.n)).attr('fill', F.css('--down')).attr('fill-opacity', 0.8)
+      .on('pointerenter', (ev, v) => tip.show(x(v.predicted), y(v.observed), 'Predicted ' + v.bin, [[null, 'Mean predicted', d3.format('.0%')(v.predicted)], [null, 'Observed', d3.format('.0%')(v.observed)], [null, 'Station-days', d3.format(',')(v.n)]]))
+      .on('pointerleave', () => tip.hide());
+    fr.put();
+  }
+
+  function stations() {
+    const box = document.getElementById('c-stn'), d = dash.data('t2_stations');
+    if (d.status === 'error') return F.fail(box);
+    if (d.status !== 'ok') return;
+    const be = F.be(), rows = [...d.data].sort((a, b) => b[be] - a[be]);
+    const bh = 16, gap = 6, fr = F.frame(box, rows.length * (bh + gap) + 24), { W, H, svg } = fr;
+    const ctx = document.createElement('canvas').getContext('2d'); ctx.font = '11px sans-serif';
+    const lw = Math.min(W * 0.5, d3.max(rows, (r) => ctx.measureText(r.station).width) + 12);
+    const x = d3.scaleLinear([0, Math.max(0.05, d3.max(rows, (r) => Math.max(r[be], r.actual_rate)))], [lw, W - 40]).nice();
+    const g = svg.append('g').selectAll('g').data(rows).join('g').attr('transform', (r, i) => `translate(0,${i * (bh + gap)})`);
+    g.append('rect').attr('x', lw).attr('width', (r) => x(r[be]) - lw).attr('height', bh).attr('rx', 4).attr('fill', F.css('--hill')).attr('fill-opacity', 0.85);
+    g.append('rect').attr('x', (r) => x(r.actual_rate) - 1.5).attr('y', -2).attr('width', 3).attr('height', bh + 4).attr('fill', 'var(--color-fg)');
+    g.append('text').attr('x', 0).attr('y', bh / 2).attr('dy', '0.32em').text((r) => r.station)
+      .each(function () { while (this.getComputedTextLength() > lw - 8 && this.textContent.length > 4) this.textContent = this.textContent.slice(0, -2) + '…'; });
+    g.append('text').attr('x', (r) => Math.max(x(r[be]), x(r.actual_rate)) + 6).attr('y', bh / 2).attr('dy', '0.32em').text((r) => d3.format('.0%')(r[be]));
+    svg.append('g').attr('class', 'axis').attr('transform', `translate(0,${H - 20})`).call(d3.axisBottom(x).ticks(4).tickFormat(d3.format('.0%')).tickSizeOuter(0)).attr('font-size', null).attr('font-family', null);
+    fr.put();
+  }
+
+  function hourly() {
+    const box = document.getElementById('c-t3'), d = dash.data('t3_series');
+    if (d.status === 'error') return F.fail(box);
+    if (d.status !== 'ok') return;
+    const be = F.be(), parse = d3.utcParse('%Y-%m-%d %H:%M');
+    const rows = d.data.filter((r) => r.item === F.item()).map((r) => ({ ...r, ts: parse(r.hour), mean: r[be + '_mean'], lo: r[be + '_q10'], hi: r[be + '_q90'] }));
+    const fr = F.frame(box, 240), m = { t: 10, r: 10, b: 22, l: 38 }, { W, H, svg } = fr;
+    const x = d3.scaleUtc(d3.extent(rows, (r) => r.ts), [m.l, W - m.r]);
+    const y = d3.scaleLinear([0, d3.max(rows, (r) => Math.max(r.actual, r.hi))], [H - m.b, m.t]).nice();
+    F.yaxis(svg, y, m.l, W - m.r);
+    svg.append('g').attr('class', 'axis').attr('transform', `translate(0,${H - m.b})`).call(d3.axisBottom(x).ticks(W < 480 ? 3 : 7).tickFormat(d3.utcFormat('%b %-d')).tickSizeOuter(0)).attr('font-size', null).attr('font-family', null);
+    svg.append('path').datum(rows).attr('fill', F.css('--down')).attr('fill-opacity', 0.16).attr('d', d3.area((r) => x(r.ts), (r) => y(r.lo), (r) => y(r.hi)));
+    svg.append('path').datum(rows).attr('fill', 'none').attr('stroke', F.css('--other')).attr('stroke-width', 1).attr('stroke-dasharray', '3 3').attr('d', d3.line((r) => x(r.ts), (r) => y(r.naive)));
+    svg.append('path').datum(rows).attr('fill', 'none').attr('stroke', F.css('--down')).attr('stroke-width', 1.6).attr('d', d3.line((r) => x(r.ts), (r) => y(r.mean)));
+    svg.append('path').datum(rows).attr('fill', 'none').attr('stroke', F.css('--hill')).attr('stroke-width', 1.6).attr('d', d3.line((r) => x(r.ts), (r) => y(r.actual)));
+    const tip = F.tip(box), bis = d3.bisector((r) => r.ts).center, rule = svg.append('line').attr('stroke', 'var(--cds-chart-reference)').attr('y1', m.t).attr('y2', H - m.b).attr('hidden', true);
+    svg.append('rect').attr('x', m.l).attr('y', m.t).attr('width', W - m.l - m.r).attr('height', H - m.t - m.b).attr('fill', 'transparent')
+      .on('pointermove', (ev) => { const r = rows[bis(rows, x.invert(d3.pointer(ev)[0]))]; rule.attr('hidden', null).attr('x1', x(r.ts)).attr('x2', x(r.ts));
+        tip.show(x(r.ts), y(Math.max(r.actual, r.hi)), d3.utcFormat('%a %b %-d, %-I %p')(r.ts), [[F.css('--hill'), 'Actual', r.actual], [F.css('--down'), 'TabICL', `${Math.round(r.mean)} (${Math.round(r.lo)}–${Math.round(r.hi)})`], [F.css('--other'), 'Last week', r.naive]]); })
+      .on('pointerleave', () => { rule.attr('hidden', true); tip.hide(); });
+    fr.put();
+  }
+
+  function table() {
+    const tb = document.querySelector('#backends tbody'), d = dash.data('backends');
+    if (d.status !== 'ok') return;
+    tb.replaceChildren(...d.data.map((r) => {
+      const tr = document.createElement('tr');
+      [[r.task], [r.local_secs.toFixed(1), 'num'], [r.api_secs.toFixed(1), 'num'], [r.local_context], [r.api_context], [r.corr.toFixed(3), 'num']].forEach(([v, c]) => {
+        const td = document.createElement('td'); td.textContent = v; if (c) td.className = c; tr.append(td);
+      });
+      return tr;
+    }));
+  }
+
+  dash.onData(() => { cal(); stations(); hourly(); table(); });
+})();
+</script>

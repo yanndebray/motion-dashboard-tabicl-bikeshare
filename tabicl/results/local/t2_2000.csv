@@ -1,0 +1,1477 @@
+date,station,actual,proba
+2012-07-02,11th & Kenyon St NW,0,0.0035396162
+2012-07-03,11th & Kenyon St NW,0,0.0036781104
+2012-07-05,11th & Kenyon St NW,0,0.0050341743
+2012-07-06,11th & Kenyon St NW,0,0.0046878904
+2012-07-09,11th & Kenyon St NW,0,0.004219259
+2012-07-10,11th & Kenyon St NW,0,0.0043207514
+2012-07-11,11th & Kenyon St NW,0,0.0049239774
+2012-07-12,11th & Kenyon St NW,0,0.0048789936
+2012-07-13,11th & Kenyon St NW,0,0.00430212
+2012-07-16,11th & Kenyon St NW,0,0.0052393186
+2012-07-17,11th & Kenyon St NW,0,0.0052195615
+2012-07-18,11th & Kenyon St NW,0,0.005823724
+2012-07-19,11th & Kenyon St NW,0,0.0045237485
+2012-07-20,11th & Kenyon St NW,0,0.005039615
+2012-07-23,11th & Kenyon St NW,0,0.005342103
+2012-07-24,11th & Kenyon St NW,0,0.005681
+2012-07-25,11th & Kenyon St NW,0,0.0058615445
+2012-07-26,11th & Kenyon St NW,0,0.005668755
+2012-07-27,11th & Kenyon St NW,0,0.006044528
+2012-07-30,11th & Kenyon St NW,0,0.0061431006
+2012-07-31,11th & Kenyon St NW,0,0.0067253937
+2012-08-01,11th & Kenyon St NW,0,0.0055447454
+2012-08-02,11th & Kenyon St NW,0,0.0049586585
+2012-08-03,11th & Kenyon St NW,0,0.0049027572
+2012-08-06,11th & Kenyon St NW,0,0.004886901
+2012-08-07,11th & Kenyon St NW,0,0.0056473874
+2012-08-08,11th & Kenyon St NW,0,0.0055807563
+2012-08-09,11th & Kenyon St NW,0,0.0055597182
+2012-08-10,11th & Kenyon St NW,0,0.005284757
+2012-08-13,11th & Kenyon St NW,0,0.0058300137
+2012-08-14,11th & Kenyon St NW,0,0.005610949
+2012-08-15,11th & Kenyon St NW,0,0.006500869
+2012-08-16,11th & Kenyon St NW,0,0.006707293
+2012-08-17,11th & Kenyon St NW,0,0.012721343
+2012-08-20,11th & Kenyon St NW,0,0.0070065088
+2012-08-21,11th & Kenyon St NW,0,0.0074823694
+2012-08-22,11th & Kenyon St NW,0,0.0072953636
+2012-08-23,11th & Kenyon St NW,0,0.0068092635
+2012-08-24,11th & Kenyon St NW,0,0.007078593
+2012-08-27,11th & Kenyon St NW,0,0.008310413
+2012-08-28,11th & Kenyon St NW,0,0.008722633
+2012-08-29,11th & Kenyon St NW,0,0.009838692
+2012-08-30,11th & Kenyon St NW,0,0.009404497
+2012-08-31,11th & Kenyon St NW,0,0.008779105
+2012-09-04,11th & Kenyon St NW,0,0.012064124
+2012-09-05,11th & Kenyon St NW,0,0.012700926
+2012-09-06,11th & Kenyon St NW,0,0.011084046
+2012-09-07,11th & Kenyon St NW,0,0.013493091
+2012-09-10,11th & Kenyon St NW,0,0.015755925
+2012-09-11,11th & Kenyon St NW,0,0.016156284
+2012-09-12,11th & Kenyon St NW,0,0.016681941
+2012-09-13,11th & Kenyon St NW,0,0.016113212
+2012-09-14,11th & Kenyon St NW,0,0.016355833
+2012-09-17,11th & Kenyon St NW,0,0.01692394
+2012-09-18,11th & Kenyon St NW,0,0.01940695
+2012-09-19,11th & Kenyon St NW,0,0.017974708
+2012-09-20,11th & Kenyon St NW,0,0.017727414
+2012-09-21,11th & Kenyon St NW,0,0.016842885
+2012-09-24,11th & Kenyon St NW,0,0.017898265
+2012-09-25,11th & Kenyon St NW,0,0.017850628
+2012-09-26,11th & Kenyon St NW,0,0.018867252
+2012-09-27,11th & Kenyon St NW,0,0.018558407
+2012-09-28,11th & Kenyon St NW,0,0.017298026
+2012-10-01,11th & Kenyon St NW,0,0.01850908
+2012-10-02,11th & Kenyon St NW,0,0.017023513
+2012-10-03,11th & Kenyon St NW,0,0.019468995
+2012-10-04,11th & Kenyon St NW,0,0.016531318
+2012-10-05,11th & Kenyon St NW,0,0.018312985
+2012-10-09,11th & Kenyon St NW,0,0.019386316
+2012-10-10,11th & Kenyon St NW,0,0.020347489
+2012-10-11,11th & Kenyon St NW,0,0.018118927
+2012-10-12,11th & Kenyon St NW,0,0.019018482
+2012-10-15,11th & Kenyon St NW,0,0.01778417
+2012-10-16,11th & Kenyon St NW,0,0.019750614
+2012-10-17,11th & Kenyon St NW,0,0.018927589
+2012-10-18,11th & Kenyon St NW,0,0.018927598
+2012-10-19,11th & Kenyon St NW,0,0.015613536
+2012-10-22,11th & Kenyon St NW,0,0.020046877
+2012-10-23,11th & Kenyon St NW,0,0.018887345
+2012-10-24,11th & Kenyon St NW,0,0.020532161
+2012-10-25,11th & Kenyon St NW,0,0.019130139
+2012-10-26,11th & Kenyon St NW,0,0.017670814
+2012-10-31,11th & Kenyon St NW,0,0.017279591
+2012-11-01,11th & Kenyon St NW,0,0.016557796
+2012-11-02,11th & Kenyon St NW,0,0.01742761
+2012-11-05,11th & Kenyon St NW,0,0.016664157
+2012-11-06,11th & Kenyon St NW,0,0.015688762
+2012-11-07,11th & Kenyon St NW,0,0.015455894
+2012-11-08,11th & Kenyon St NW,0,0.015472404
+2012-11-09,11th & Kenyon St NW,0,0.014745945
+2012-11-13,11th & Kenyon St NW,0,0.013696801
+2012-11-14,11th & Kenyon St NW,0,0.014395407
+2012-11-15,11th & Kenyon St NW,0,0.015185797
+2012-11-16,11th & Kenyon St NW,0,0.015202037
+2012-11-19,11th & Kenyon St NW,0,0.016762221
+2012-11-20,11th & Kenyon St NW,0,0.016566643
+2012-11-21,11th & Kenyon St NW,0,0.01579805
+2012-11-23,11th & Kenyon St NW,0,0.012885916
+2012-11-26,11th & Kenyon St NW,0,0.013696801
+2012-11-27,11th & Kenyon St NW,0,0.012796517
+2012-11-28,11th & Kenyon St NW,0,0.013059589
+2012-11-29,11th & Kenyon St NW,0,0.013150812
+2012-11-30,11th & Kenyon St NW,0,0.012451652
+2012-12-03,11th & Kenyon St NW,0,0.013493103
+2012-12-04,11th & Kenyon St NW,0,0.01380717
+2012-12-05,11th & Kenyon St NW,0,0.01137316
+2012-12-06,11th & Kenyon St NW,0,0.010709837
+2012-12-07,11th & Kenyon St NW,0,0.010561411
+2012-12-10,11th & Kenyon St NW,0,0.013122667
+2012-12-11,11th & Kenyon St NW,0,0.011489645
+2012-12-12,11th & Kenyon St NW,0,0.011336615
+2012-12-13,11th & Kenyon St NW,0,0.010248598
+2012-12-14,11th & Kenyon St NW,0,0.0100631695
+2012-12-17,11th & Kenyon St NW,0,0.011782888
+2012-12-18,11th & Kenyon St NW,0,0.011719882
+2012-12-19,11th & Kenyon St NW,0,0.010901206
+2012-12-20,11th & Kenyon St NW,0,0.010971622
+2012-12-21,11th & Kenyon St NW,0,0.009681392
+2012-12-24,11th & Kenyon St NW,0,0.010337032
+2012-12-26,11th & Kenyon St NW,0,0.009135456
+2012-12-27,11th & Kenyon St NW,0,0.009707427
+2012-12-28,11th & Kenyon St NW,0,0.009273996
+2012-12-31,11th & Kenyon St NW,0,0.010248603
+2012-07-02,16th & Harvard St NW,1,0.50488263
+2012-07-03,16th & Harvard St NW,1,0.65061533
+2012-07-05,16th & Harvard St NW,0,0.6513549
+2012-07-06,16th & Harvard St NW,1,0.45293903
+2012-07-09,16th & Harvard St NW,0,0.5065099
+2012-07-10,16th & Harvard St NW,1,0.49376115
+2012-07-11,16th & Harvard St NW,1,0.67984045
+2012-07-12,16th & Harvard St NW,1,0.68102014
+2012-07-13,16th & Harvard St NW,1,0.58699644
+2012-07-16,16th & Harvard St NW,1,0.668159
+2012-07-17,16th & Harvard St NW,1,0.6719969
+2012-07-18,16th & Harvard St NW,1,0.6829028
+2012-07-19,16th & Harvard St NW,0,0.66114545
+2012-07-20,16th & Harvard St NW,1,0.41471457
+2012-07-23,16th & Harvard St NW,1,0.62936985
+2012-07-24,16th & Harvard St NW,1,0.6619959
+2012-07-25,16th & Harvard St NW,1,0.7277174
+2012-07-26,16th & Harvard St NW,1,0.6391855
+2012-07-27,16th & Harvard St NW,1,0.61508787
+2012-07-30,16th & Harvard St NW,1,0.6321495
+2012-07-31,16th & Harvard St NW,1,0.64999837
+2012-08-01,16th & Harvard St NW,1,0.6288634
+2012-08-02,16th & Harvard St NW,1,0.60398364
+2012-08-03,16th & Harvard St NW,1,0.5596645
+2012-08-06,16th & Harvard St NW,1,0.50162745
+2012-08-07,16th & Harvard St NW,1,0.62378454
+2012-08-08,16th & Harvard St NW,1,0.61303073
+2012-08-09,16th & Harvard St NW,1,0.600605
+2012-08-10,16th & Harvard St NW,0,0.42833966
+2012-08-13,16th & Harvard St NW,1,0.4470312
+2012-08-14,16th & Harvard St NW,1,0.5159993
+2012-08-15,16th & Harvard St NW,1,0.6464105
+2012-08-16,16th & Harvard St NW,1,0.64305526
+2012-08-17,16th & Harvard St NW,1,0.5225001
+2012-08-20,16th & Harvard St NW,1,0.62683517
+2012-08-21,16th & Harvard St NW,1,0.6440509
+2012-08-22,16th & Harvard St NW,1,0.65270895
+2012-08-23,16th & Harvard St NW,1,0.6107116
+2012-08-24,16th & Harvard St NW,1,0.56367165
+2012-08-27,16th & Harvard St NW,1,0.62097925
+2012-08-28,16th & Harvard St NW,1,0.62873673
+2012-08-29,16th & Harvard St NW,1,0.6653864
+2012-08-30,16th & Harvard St NW,1,0.62212783
+2012-08-31,16th & Harvard St NW,1,0.5663383
+2012-09-04,16th & Harvard St NW,1,0.5810654
+2012-09-05,16th & Harvard St NW,1,0.5996935
+2012-09-06,16th & Harvard St NW,1,0.48887983
+2012-09-07,16th & Harvard St NW,0,0.54571605
+2012-09-10,16th & Harvard St NW,1,0.46276963
+2012-09-11,16th & Harvard St NW,1,0.57073027
+2012-09-12,16th & Harvard St NW,1,0.57219154
+2012-09-13,16th & Harvard St NW,1,0.55551577
+2012-09-14,16th & Harvard St NW,1,0.53250635
+2012-09-17,16th & Harvard St NW,1,0.5396573
+2012-09-18,16th & Harvard St NW,1,0.5477327
+2012-09-19,16th & Harvard St NW,1,0.5697996
+2012-09-20,16th & Harvard St NW,1,0.5480015
+2012-09-21,16th & Harvard St NW,1,0.5073237
+2012-09-24,16th & Harvard St NW,1,0.5396573
+2012-09-25,16th & Harvard St NW,1,0.544909
+2012-09-26,16th & Harvard St NW,1,0.55203015
+2012-09-27,16th & Harvard St NW,1,0.55739033
+2012-09-28,16th & Harvard St NW,1,0.49755862
+2012-10-01,16th & Harvard St NW,1,0.521688
+2012-10-02,16th & Harvard St NW,0,0.47790608
+2012-10-03,16th & Harvard St NW,1,0.44087052
+2012-10-04,16th & Harvard St NW,1,0.46722373
+2012-10-05,16th & Harvard St NW,1,0.51301783
+2012-10-09,16th & Harvard St NW,1,0.5339915
+2012-10-10,16th & Harvard St NW,1,0.5532371
+2012-10-11,16th & Harvard St NW,1,0.5436979
+2012-10-12,16th & Harvard St NW,0,0.5227709
+2012-10-15,16th & Harvard St NW,1,0.40147924
+2012-10-16,16th & Harvard St NW,1,0.55283463
+2012-10-17,16th & Harvard St NW,1,0.5326412
+2012-10-18,16th & Harvard St NW,1,0.53291136
+2012-10-19,16th & Harvard St NW,0,0.4156364
+2012-10-22,16th & Harvard St NW,1,0.45805255
+2012-10-23,16th & Harvard St NW,1,0.5339915
+2012-10-24,16th & Harvard St NW,1,0.55993193
+2012-10-25,16th & Harvard St NW,1,0.53291136
+2012-10-26,16th & Harvard St NW,1,0.49050683
+2012-10-31,16th & Harvard St NW,1,0.51193345
+2012-11-01,16th & Harvard St NW,1,0.47871825
+2012-11-02,16th & Harvard St NW,1,0.51179785
+2012-11-05,16th & Harvard St NW,1,0.5300745
+2012-11-06,16th & Harvard St NW,1,0.5292634
+2012-11-07,16th & Harvard St NW,1,0.5207401
+2012-11-08,16th & Harvard St NW,1,0.5366907
+2012-11-09,16th & Harvard St NW,1,0.4807496
+2012-11-13,16th & Harvard St NW,0,0.43086562
+2012-11-14,16th & Harvard St NW,1,0.42634818
+2012-11-15,16th & Harvard St NW,1,0.5233121
+2012-11-16,16th & Harvard St NW,1,0.5054253
+2012-11-19,16th & Harvard St NW,0,0.5712617
+2012-11-20,16th & Harvard St NW,1,0.45119238
+2012-11-21,16th & Harvard St NW,1,0.5208755
+2012-11-23,16th & Harvard St NW,0,0.46155593
+2012-11-26,16th & Harvard St NW,1,0.4036975
+2012-11-27,16th & Harvard St NW,1,0.4344613
+2012-11-28,16th & Harvard St NW,0,0.5130181
+2012-11-29,16th & Harvard St NW,1,0.41195178
+2012-11-30,16th & Harvard St NW,1,0.4456902
+2012-12-03,16th & Harvard St NW,1,0.48278132
+2012-12-04,16th & Harvard St NW,1,0.5126111
+2012-12-05,16th & Harvard St NW,1,0.47073662
+2012-12-06,16th & Harvard St NW,1,0.4887445
+2012-12-07,16th & Harvard St NW,0,0.35445794
+2012-12-10,16th & Harvard St NW,0,0.36785045
+2012-12-11,16th & Harvard St NW,1,0.37088335
+2012-12-12,16th & Harvard St NW,1,0.47763553
+2012-12-13,16th & Harvard St NW,1,0.45737907
+2012-12-14,16th & Harvard St NW,1,0.40998164
+2012-12-17,16th & Harvard St NW,1,0.45805228
+2012-12-18,16th & Harvard St NW,1,0.47290003
+2012-12-19,16th & Harvard St NW,1,0.4436807
+2012-12-20,16th & Harvard St NW,1,0.45670602
+2012-12-21,16th & Harvard St NW,0,0.4275426
+2012-12-24,16th & Harvard St NW,0,0.32181498
+2012-12-26,16th & Harvard St NW,0,0.2689628
+2012-12-27,16th & Harvard St NW,0,0.33376846
+2012-12-28,16th & Harvard St NW,0,0.28914878
+2012-12-31,16th & Harvard St NW,0,0.30328444
+2012-07-02,Adams Mill & Columbia Rd NW,0,0.27965364
+2012-07-03,Adams Mill & Columbia Rd NW,0,0.25050506
+2012-07-05,Adams Mill & Columbia Rd NW,0,0.24594922
+2012-07-06,Adams Mill & Columbia Rd NW,0,0.23857966
+2012-07-09,Adams Mill & Columbia Rd NW,0,0.21190567
+2012-07-10,Adams Mill & Columbia Rd NW,1,0.25470445
+2012-07-11,Adams Mill & Columbia Rd NW,1,0.35557583
+2012-07-12,Adams Mill & Columbia Rd NW,0,0.36684155
+2012-07-13,Adams Mill & Columbia Rd NW,0,0.22054765
+2012-07-16,Adams Mill & Columbia Rd NW,1,0.27465394
+2012-07-17,Adams Mill & Columbia Rd NW,1,0.34889165
+2012-07-18,Adams Mill & Columbia Rd NW,0,0.3613148
+2012-07-19,Adams Mill & Columbia Rd NW,1,0.23976456
+2012-07-20,Adams Mill & Columbia Rd NW,0,0.29004148
+2012-07-23,Adams Mill & Columbia Rd NW,0,0.24214576
+2012-07-24,Adams Mill & Columbia Rd NW,0,0.25874206
+2012-07-25,Adams Mill & Columbia Rd NW,1,0.30259714
+2012-07-26,Adams Mill & Columbia Rd NW,0,0.3264503
+2012-07-27,Adams Mill & Columbia Rd NW,0,0.23174934
+2012-07-30,Adams Mill & Columbia Rd NW,0,0.24534607
+2012-07-31,Adams Mill & Columbia Rd NW,1,0.2630311
+2012-08-01,Adams Mill & Columbia Rd NW,1,0.32134163
+2012-08-02,Adams Mill & Columbia Rd NW,1,0.30684987
+2012-08-03,Adams Mill & Columbia Rd NW,0,0.27486998
+2012-08-06,Adams Mill & Columbia Rd NW,1,0.19665469
+2012-08-07,Adams Mill & Columbia Rd NW,0,0.31921566
+2012-08-08,Adams Mill & Columbia Rd NW,1,0.2250568
+2012-08-09,Adams Mill & Columbia Rd NW,0,0.30054024
+2012-08-10,Adams Mill & Columbia Rd NW,0,0.17305513
+2012-08-13,Adams Mill & Columbia Rd NW,1,0.23563567
+2012-08-14,Adams Mill & Columbia Rd NW,0,0.2649283
+2012-08-15,Adams Mill & Columbia Rd NW,0,0.2485748
+2012-08-16,Adams Mill & Columbia Rd NW,0,0.25842997
+2012-08-17,Adams Mill & Columbia Rd NW,1,0.2328138
+2012-08-20,Adams Mill & Columbia Rd NW,0,0.33558068
+2012-08-21,Adams Mill & Columbia Rd NW,0,0.27368227
+2012-08-22,Adams Mill & Columbia Rd NW,0,0.2717453
+2012-08-23,Adams Mill & Columbia Rd NW,0,0.24324265
+2012-08-24,Adams Mill & Columbia Rd NW,1,0.22590956
+2012-08-27,Adams Mill & Columbia Rd NW,0,0.34459054
+2012-08-28,Adams Mill & Columbia Rd NW,1,0.264506
+2012-08-29,Adams Mill & Columbia Rd NW,0,0.37507054
+2012-08-30,Adams Mill & Columbia Rd NW,0,0.2715306
+2012-08-31,Adams Mill & Columbia Rd NW,0,0.23818575
+2012-09-04,Adams Mill & Columbia Rd NW,0,0.2606193
+2012-09-05,Adams Mill & Columbia Rd NW,0,0.26747188
+2012-09-06,Adams Mill & Columbia Rd NW,0,0.22571999
+2012-09-07,Adams Mill & Columbia Rd NW,0,0.2598882
+2012-09-10,Adams Mill & Columbia Rd NW,1,0.28836867
+2012-09-11,Adams Mill & Columbia Rd NW,0,0.35781664
+2012-09-12,Adams Mill & Columbia Rd NW,1,0.29149604
+2012-09-13,Adams Mill & Columbia Rd NW,1,0.34741408
+2012-09-14,Adams Mill & Columbia Rd NW,0,0.328362
+2012-09-17,Adams Mill & Columbia Rd NW,0,0.2775816
+2012-09-18,Adams Mill & Columbia Rd NW,1,0.2722826
+2012-09-19,Adams Mill & Columbia Rd NW,1,0.3623172
+2012-09-20,Adams Mill & Columbia Rd NW,1,0.35061893
+2012-09-21,Adams Mill & Columbia Rd NW,0,0.31768483
+2012-09-24,Adams Mill & Columbia Rd NW,0,0.2792166
+2012-09-25,Adams Mill & Columbia Rd NW,0,0.2829442
+2012-09-26,Adams Mill & Columbia Rd NW,0,0.2833846
+2012-09-27,Adams Mill & Columbia Rd NW,0,0.28647968
+2012-09-28,Adams Mill & Columbia Rd NW,0,0.25285524
+2012-10-01,Adams Mill & Columbia Rd NW,0,0.2715306
+2012-10-02,Adams Mill & Columbia Rd NW,0,0.24695681
+2012-10-03,Adams Mill & Columbia Rd NW,1,0.27823496
+2012-10-04,Adams Mill & Columbia Rd NW,0,0.29004148
+2012-10-05,Adams Mill & Columbia Rd NW,1,0.2646116
+2012-10-09,Adams Mill & Columbia Rd NW,0,0.34889165
+2012-10-10,Adams Mill & Columbia Rd NW,1,0.29104796
+2012-10-11,Adams Mill & Columbia Rd NW,1,0.3511133
+2012-10-12,Adams Mill & Columbia Rd NW,0,0.34031475
+2012-10-15,Adams Mill & Columbia Rd NW,1,0.2568735
+2012-10-16,Adams Mill & Columbia Rd NW,1,0.36106458
+2012-10-17,Adams Mill & Columbia Rd NW,0,0.34852192
+2012-10-18,Adams Mill & Columbia Rd NW,1,0.27965364
+2012-10-19,Adams Mill & Columbia Rd NW,0,0.25739157
+2012-10-22,Adams Mill & Columbia Rd NW,0,0.30008414
+2012-10-23,Adams Mill & Columbia Rd NW,0,0.27932602
+2012-10-24,Adams Mill & Columbia Rd NW,0,0.2953202
+2012-10-25,Adams Mill & Columbia Rd NW,0,0.27508637
+2012-10-26,Adams Mill & Columbia Rd NW,0,0.24979272
+2012-10-31,Adams Mill & Columbia Rd NW,0,0.27110147
+2012-11-01,Adams Mill & Columbia Rd NW,0,0.24847327
+2012-11-02,Adams Mill & Columbia Rd NW,0,0.2658805
+2012-11-05,Adams Mill & Columbia Rd NW,0,0.27003092
+2012-11-06,Adams Mill & Columbia Rd NW,0,0.2744378
+2012-11-07,Adams Mill & Columbia Rd NW,0,0.26355737
+2012-11-08,Adams Mill & Columbia Rd NW,0,0.27045876
+2012-11-09,Adams Mill & Columbia Rd NW,1,0.2402593
+2012-11-13,Adams Mill & Columbia Rd NW,0,0.26376808
+2012-11-14,Adams Mill & Columbia Rd NW,1,0.26324153
+2012-11-15,Adams Mill & Columbia Rd NW,0,0.3232378
+2012-11-16,Adams Mill & Columbia Rd NW,1,0.25081083
+2012-11-19,Adams Mill & Columbia Rd NW,0,0.3593143
+2012-11-20,Adams Mill & Columbia Rd NW,0,0.28030977
+2012-11-21,Adams Mill & Columbia Rd NW,1,0.26261055
+2012-11-23,Adams Mill & Columbia Rd NW,0,0.28603622
+2012-11-26,Adams Mill & Columbia Rd NW,0,0.2529578
+2012-11-27,Adams Mill & Columbia Rd NW,1,0.21235913
+2012-11-28,Adams Mill & Columbia Rd NW,0,0.3113688
+2012-11-29,Adams Mill & Columbia Rd NW,0,0.2571842
+2012-11-30,Adams Mill & Columbia Rd NW,0,0.21868795
+2012-12-03,Adams Mill & Columbia Rd NW,1,0.2287684
+2012-12-04,Adams Mill & Columbia Rd NW,0,0.30673468
+2012-12-05,Adams Mill & Columbia Rd NW,0,0.20937984
+2012-12-06,Adams Mill & Columbia Rd NW,0,0.22157529
+2012-12-07,Adams Mill & Columbia Rd NW,1,0.16356413
+2012-12-10,Adams Mill & Columbia Rd NW,0,0.2888141
+2012-12-11,Adams Mill & Columbia Rd NW,0,0.21308582
+2012-12-12,Adams Mill & Columbia Rd NW,0,0.21290392
+2012-12-13,Adams Mill & Columbia Rd NW,0,0.19984533
+2012-12-14,Adams Mill & Columbia Rd NW,0,0.18395168
+2012-12-17,Adams Mill & Columbia Rd NW,0,0.2049246
+2012-12-18,Adams Mill & Columbia Rd NW,1,0.21181506
+2012-12-19,Adams Mill & Columbia Rd NW,0,0.26282078
+2012-12-20,Adams Mill & Columbia Rd NW,0,0.2019357
+2012-12-21,Adams Mill & Columbia Rd NW,0,0.17887618
+2012-12-24,Adams Mill & Columbia Rd NW,0,0.18822443
+2012-12-26,Adams Mill & Columbia Rd NW,0,0.15945002
+2012-12-27,Adams Mill & Columbia Rd NW,0,0.1895545
+2012-12-28,Adams Mill & Columbia Rd NW,0,0.16512889
+2012-12-31,Adams Mill & Columbia Rd NW,0,0.17823958
+2012-07-02,14th & Harvard St NW,0,0.09767697
+2012-07-03,14th & Harvard St NW,0,0.08957842
+2012-07-05,14th & Harvard St NW,0,0.09975247
+2012-07-06,14th & Harvard St NW,1,0.09245082
+2012-07-09,14th & Harvard St NW,0,0.1075103
+2012-07-10,14th & Harvard St NW,0,0.0973904
+2012-07-11,14th & Harvard St NW,1,0.10834602
+2012-07-12,14th & Harvard St NW,0,0.15742455
+2012-07-13,14th & Harvard St NW,0,0.083491
+2012-07-16,14th & Harvard St NW,0,0.10524116
+2012-07-17,14th & Harvard St NW,0,0.10122368
+2012-07-18,14th & Harvard St NW,1,0.1078231
+2012-07-19,14th & Harvard St NW,0,0.1451692
+2012-07-20,14th & Harvard St NW,0,0.08466074
+2012-07-23,14th & Harvard St NW,0,0.09611029
+2012-07-24,14th & Harvard St NW,0,0.10097701
+2012-07-25,14th & Harvard St NW,0,0.119968325
+2012-07-26,14th & Harvard St NW,0,0.09517177
+2012-07-27,14th & Harvard St NW,0,0.0935491
+2012-07-30,14th & Harvard St NW,0,0.09946048
+2012-07-31,14th & Harvard St NW,0,0.105753236
+2012-08-01,14th & Harvard St NW,0,0.095780894
+2012-08-02,14th & Harvard St NW,1,0.08799829
+2012-08-03,14th & Harvard St NW,0,0.11557199
+2012-08-06,14th & Harvard St NW,0,0.06946453
+2012-08-07,14th & Harvard St NW,0,0.09299847
+2012-08-08,14th & Harvard St NW,0,0.090690725
+2012-08-09,14th & Harvard St NW,0,0.088609725
+2012-08-10,14th & Harvard St NW,0,0.06163079
+2012-08-13,14th & Harvard St NW,0,0.09204195
+2012-08-14,14th & Harvard St NW,0,0.07566819
+2012-08-15,14th & Harvard St NW,0,0.10161913
+2012-08-16,14th & Harvard St NW,0,0.10412256
+2012-08-17,14th & Harvard St NW,0,0.11147743
+2012-08-20,14th & Harvard St NW,0,0.10442656
+2012-08-21,14th & Harvard St NW,0,0.11288229
+2012-08-22,14th & Harvard St NW,0,0.11282796
+2012-08-23,14th & Harvard St NW,0,0.100191735
+2012-08-24,14th & Harvard St NW,0,0.09245074
+2012-08-27,14th & Harvard St NW,0,0.115516536
+2012-08-28,14th & Harvard St NW,0,0.11713385
+2012-08-29,14th & Harvard St NW,0,0.13234001
+2012-08-30,14th & Harvard St NW,0,0.12233673
+2012-08-31,14th & Harvard St NW,0,0.10714646
+2012-09-04,14th & Harvard St NW,0,0.13422018
+2012-09-05,14th & Harvard St NW,0,0.14104463
+2012-09-06,14th & Harvard St NW,0,0.11083421
+2012-09-07,14th & Harvard St NW,0,0.13779002
+2012-09-10,14th & Harvard St NW,0,0.16061673
+2012-09-11,14th & Harvard St NW,0,0.16348991
+2012-09-12,14th & Harvard St NW,0,0.1664043
+2012-09-13,14th & Harvard St NW,0,0.16134953
+2012-09-14,14th & Harvard St NW,0,0.1542839
+2012-09-17,14th & Harvard St NW,0,0.16069004
+2012-09-18,14th & Harvard St NW,0,0.16512889
+2012-09-19,14th & Harvard St NW,0,0.17104593
+2012-09-20,14th & Harvard St NW,0,0.16663024
+2012-09-21,14th & Harvard St NW,0,0.14884278
+2012-09-24,14th & Harvard St NW,0,0.16238004
+2012-09-25,14th & Harvard St NW,1,0.16438228
+2012-09-26,14th & Harvard St NW,0,0.23155636
+2012-09-27,14th & Harvard St NW,0,0.1715849
+2012-09-28,14th & Harvard St NW,0,0.14898027
+2012-10-01,14th & Harvard St NW,0,0.16193783
+2012-10-02,14th & Harvard St NW,0,0.14289503
+2012-10-03,14th & Harvard St NW,0,0.17112273
+2012-10-04,14th & Harvard St NW,0,0.13785452
+2012-10-05,14th & Harvard St NW,0,0.15684965
+2012-10-09,14th & Harvard St NW,0,0.16936
+2012-10-10,14th & Harvard St NW,0,0.17768389
+2012-10-11,14th & Harvard St NW,0,0.16700722
+2012-10-12,14th & Harvard St NW,0,0.16326746
+2012-10-15,14th & Harvard St NW,0,0.15001497
+2012-10-16,14th & Harvard St NW,0,0.17461348
+2012-10-17,14th & Harvard St NW,0,0.16974203
+2012-10-18,14th & Harvard St NW,0,0.16602841
+2012-10-19,14th & Harvard St NW,0,0.120657355
+2012-10-22,14th & Harvard St NW,0,0.1783986
+2012-10-23,14th & Harvard St NW,0,0.16602841
+2012-10-24,14th & Harvard St NW,0,0.18055578
+2012-10-25,14th & Harvard St NW,0,0.16535331
+2012-10-26,14th & Harvard St NW,0,0.146521
+2012-10-31,14th & Harvard St NW,0,0.1553487
+2012-11-01,14th & Harvard St NW,0,0.13701846
+2012-11-02,14th & Harvard St NW,0,0.15036127
+2012-11-05,14th & Harvard St NW,0,0.1523123
+2012-11-06,14th & Harvard St NW,0,0.15105557
+2012-11-07,14th & Harvard St NW,0,0.14570862
+2012-11-08,14th & Harvard St NW,0,0.14856808
+2012-11-09,14th & Harvard St NW,0,0.12864675
+2012-11-13,14th & Harvard St NW,0,0.11174645
+2012-11-14,14th & Harvard St NW,0,0.14084764
+2012-11-15,14th & Harvard St NW,0,0.13986567
+2012-11-16,14th & Harvard St NW,0,0.1337795
+2012-11-19,14th & Harvard St NW,0,0.15663454
+2012-11-20,14th & Harvard St NW,0,0.15400103
+2012-11-21,14th & Harvard St NW,0,0.14349416
+2012-11-23,14th & Harvard St NW,0,0.11557199
+2012-11-26,14th & Harvard St NW,0,0.13048235
+2012-11-27,14th & Harvard St NW,0,0.105701834
+2012-11-28,14th & Harvard St NW,0,0.12737498
+2012-11-29,14th & Harvard St NW,0,0.13128456
+2012-11-30,14th & Harvard St NW,0,0.1107808
+2012-12-03,14th & Harvard St NW,1,0.12106091
+2012-12-04,14th & Harvard St NW,0,0.1766558
+2012-12-05,14th & Harvard St NW,0,0.10191671
+2012-12-06,14th & Harvard St NW,0,0.1105138
+2012-12-07,14th & Harvard St NW,0,0.07852451
+2012-12-10,14th & Harvard St NW,0,0.115905106
+2012-12-11,14th & Harvard St NW,0,0.107562415
+2012-12-12,14th & Harvard St NW,0,0.107875265
+2012-12-13,14th & Harvard St NW,0,0.09729508
+2012-12-14,14th & Harvard St NW,0,0.08948996
+2012-12-17,14th & Harvard St NW,0,0.10326526
+2012-12-18,14th & Harvard St NW,0,0.10559937
+2012-12-19,14th & Harvard St NW,0,0.09672474
+2012-12-20,14th & Harvard St NW,0,0.09834839
+2012-12-21,14th & Harvard St NW,0,0.08466077
+2012-12-24,14th & Harvard St NW,0,0.09204195
+2012-12-26,14th & Harvard St NW,0,0.07320153
+2012-12-27,14th & Harvard St NW,0,0.08971128
+2012-12-28,14th & Harvard St NW,0,0.077122875
+2012-12-31,14th & Harvard St NW,0,0.088303566
+2012-07-02,Lamont & Mt Pleasant NW,0,0.009318967
+2012-07-03,Lamont & Mt Pleasant NW,0,0.008727332
+2012-07-05,Lamont & Mt Pleasant NW,0,0.010658227
+2012-07-06,Lamont & Mt Pleasant NW,0,0.009313955
+2012-07-09,Lamont & Mt Pleasant NW,0,0.0066353893
+2012-07-10,Lamont & Mt Pleasant NW,0,0.009583058
+2012-07-11,Lamont & Mt Pleasant NW,0,0.010889512
+2012-07-12,Lamont & Mt Pleasant NW,0,0.010117361
+2012-07-13,Lamont & Mt Pleasant NW,0,0.008624672
+2012-07-16,Lamont & Mt Pleasant NW,0,0.011312313
+2012-07-17,Lamont & Mt Pleasant NW,0,0.011563823
+2012-07-18,Lamont & Mt Pleasant NW,0,0.012687317
+2012-07-19,Lamont & Mt Pleasant NW,0,0.010232102
+2012-07-20,Lamont & Mt Pleasant NW,0,0.010101072
+2012-07-23,Lamont & Mt Pleasant NW,0,0.01194828
+2012-07-24,Lamont & Mt Pleasant NW,0,0.0122203
+2012-07-25,Lamont & Mt Pleasant NW,0,0.0126398355
+2012-07-26,Lamont & Mt Pleasant NW,0,0.012538679
+2012-07-27,Lamont & Mt Pleasant NW,0,0.012226847
+2012-07-30,Lamont & Mt Pleasant NW,0,0.013378032
+2012-07-31,Lamont & Mt Pleasant NW,0,0.013933333
+2012-08-01,Lamont & Mt Pleasant NW,0,0.012371841
+2012-08-02,Lamont & Mt Pleasant NW,0,0.010860331
+2012-08-03,Lamont & Mt Pleasant NW,0,0.010487958
+2012-08-06,Lamont & Mt Pleasant NW,0,0.008615397
+2012-08-07,Lamont & Mt Pleasant NW,0,0.012687317
+2012-08-08,Lamont & Mt Pleasant NW,0,0.012619536
+2012-08-09,Lamont & Mt Pleasant NW,0,0.012398391
+2012-08-10,Lamont & Mt Pleasant NW,0,0.008164153
+2012-08-13,Lamont & Mt Pleasant NW,0,0.012128948
+2012-08-14,Lamont & Mt Pleasant NW,0,0.009547073
+2012-08-15,Lamont & Mt Pleasant NW,0,0.014410821
+2012-08-16,Lamont & Mt Pleasant NW,0,0.01391843
+2012-08-17,Lamont & Mt Pleasant NW,0,0.017567517
+2012-08-20,Lamont & Mt Pleasant NW,1,0.014464857
+2012-08-21,Lamont & Mt Pleasant NW,0,0.04726927
+2012-08-22,Lamont & Mt Pleasant NW,0,0.01500833
+2012-08-23,Lamont & Mt Pleasant NW,0,0.013993083
+2012-08-24,Lamont & Mt Pleasant NW,0,0.013507543
+2012-08-27,Lamont & Mt Pleasant NW,0,0.016208101
+2012-08-28,Lamont & Mt Pleasant NW,0,0.017879197
+2012-08-29,Lamont & Mt Pleasant NW,1,0.019656299
+2012-08-30,Lamont & Mt Pleasant NW,0,0.049747765
+2012-08-31,Lamont & Mt Pleasant NW,0,0.016987236
+2012-09-04,Lamont & Mt Pleasant NW,0,0.023631817
+2012-09-05,Lamont & Mt Pleasant NW,0,0.025422322
+2012-09-06,Lamont & Mt Pleasant NW,0,0.018548535
+2012-09-07,Lamont & Mt Pleasant NW,0,0.024381755
+2012-09-10,Lamont & Mt Pleasant NW,0,0.028658709
+2012-09-11,Lamont & Mt Pleasant NW,0,0.029238217
+2012-09-12,Lamont & Mt Pleasant NW,0,0.03038356
+2012-09-13,Lamont & Mt Pleasant NW,0,0.029099941
+2012-09-14,Lamont & Mt Pleasant NW,0,0.029423594
+2012-09-17,Lamont & Mt Pleasant NW,0,0.02986052
+2012-09-18,Lamont & Mt Pleasant NW,0,0.03530339
+2012-09-19,Lamont & Mt Pleasant NW,0,0.03236132
+2012-09-20,Lamont & Mt Pleasant NW,0,0.031143816
+2012-09-21,Lamont & Mt Pleasant NW,0,0.028992841
+2012-09-24,Lamont & Mt Pleasant NW,0,0.030769506
+2012-09-25,Lamont & Mt Pleasant NW,0,0.031390317
+2012-09-26,Lamont & Mt Pleasant NW,0,0.033783764
+2012-09-27,Lamont & Mt Pleasant NW,0,0.033117216
+2012-09-28,Lamont & Mt Pleasant NW,0,0.02984479
+2012-10-01,Lamont & Mt Pleasant NW,0,0.03185552
+2012-10-02,Lamont & Mt Pleasant NW,0,0.027460389
+2012-10-03,Lamont & Mt Pleasant NW,1,0.03464422
+2012-10-04,Lamont & Mt Pleasant NW,0,0.0551069
+2012-10-05,Lamont & Mt Pleasant NW,0,0.031094749
+2012-10-09,Lamont & Mt Pleasant NW,0,0.033571895
+2012-10-10,Lamont & Mt Pleasant NW,0,0.035861928
+2012-10-11,Lamont & Mt Pleasant NW,0,0.030785676
+2012-10-12,Lamont & Mt Pleasant NW,0,0.031572286
+2012-10-15,Lamont & Mt Pleasant NW,0,0.029222818
+2012-10-16,Lamont & Mt Pleasant NW,0,0.033695325
+2012-10-17,Lamont & Mt Pleasant NW,0,0.032191858
+2012-10-18,Lamont & Mt Pleasant NW,0,0.03315199
+2012-10-19,Lamont & Mt Pleasant NW,0,0.023656873
+2012-10-22,Lamont & Mt Pleasant NW,0,0.033571895
+2012-10-23,Lamont & Mt Pleasant NW,0,0.03258289
+2012-10-24,Lamont & Mt Pleasant NW,0,0.036087725
+2012-10-25,Lamont & Mt Pleasant NW,0,0.033483993
+2012-10-26,Lamont & Mt Pleasant NW,0,0.029719383
+2012-10-31,Lamont & Mt Pleasant NW,0,0.028734308
+2012-11-01,Lamont & Mt Pleasant NW,0,0.025088446
+2012-11-02,Lamont & Mt Pleasant NW,0,0.028119987
+2012-11-05,Lamont & Mt Pleasant NW,0,0.027344715
+2012-11-06,Lamont & Mt Pleasant NW,0,0.024824396
+2012-11-07,Lamont & Mt Pleasant NW,0,0.025168192
+2012-11-08,Lamont & Mt Pleasant NW,0,0.024890153
+2012-11-09,Lamont & Mt Pleasant NW,0,0.022783285
+2012-11-13,Lamont & Mt Pleasant NW,0,0.020282691
+2012-11-14,Lamont & Mt Pleasant NW,0,0.023111722
+2012-11-15,Lamont & Mt Pleasant NW,0,0.024811286
+2012-11-16,Lamont & Mt Pleasant NW,0,0.02420172
+2012-11-19,Lamont & Mt Pleasant NW,0,0.028463013
+2012-11-20,Lamont & Mt Pleasant NW,0,0.027678566
+2012-11-21,Lamont & Mt Pleasant NW,0,0.026006786
+2012-11-23,Lamont & Mt Pleasant NW,0,0.019489726
+2012-11-26,Lamont & Mt Pleasant NW,0,0.021276059
+2012-11-27,Lamont & Mt Pleasant NW,0,0.018687317
+2012-11-28,Lamont & Mt Pleasant NW,0,0.021017756
+2012-11-29,Lamont & Mt Pleasant NW,0,0.020641536
+2012-11-30,Lamont & Mt Pleasant NW,0,0.019018473
+2012-12-03,Lamont & Mt Pleasant NW,0,0.021332622
+2012-12-04,Lamont & Mt Pleasant NW,0,0.022566894
+2012-12-05,Lamont & Mt Pleasant NW,0,0.01716023
+2012-12-06,Lamont & Mt Pleasant NW,0,0.016399533
+2012-12-07,Lamont & Mt Pleasant NW,0,0.0142804105
+2012-12-10,Lamont & Mt Pleasant NW,0,0.02118585
+2012-12-11,Lamont & Mt Pleasant NW,0,0.018283742
+2012-12-12,Lamont & Mt Pleasant NW,0,0.017717965
+2012-12-13,Lamont & Mt Pleasant NW,0,0.015316168
+2012-12-14,Lamont & Mt Pleasant NW,0,0.0145190945
+2012-12-17,Lamont & Mt Pleasant NW,0,0.018283742
+2012-12-18,Lamont & Mt Pleasant NW,0,0.018118927
+2012-12-19,Lamont & Mt Pleasant NW,0,0.016460901
+2012-12-20,Lamont & Mt Pleasant NW,0,0.016806995
+2012-12-21,Lamont & Mt Pleasant NW,0,0.01430333
+2012-12-24,Lamont & Mt Pleasant NW,0,0.01526715
+2012-12-26,Lamont & Mt Pleasant NW,0,0.0119867725
+2012-12-27,Lamont & Mt Pleasant NW,0,0.014075666
+2012-12-28,Lamont & Mt Pleasant NW,0,0.012941244
+2012-12-31,Lamont & Mt Pleasant NW,0,0.014151155
+2012-07-02,Columbia Rd & Belmont St NW,0,0.37876534
+2012-07-03,Columbia Rd & Belmont St NW,0,0.27131617
+2012-07-05,Columbia Rd & Belmont St NW,0,0.26545703
+2012-07-06,Columbia Rd & Belmont St NW,0,0.25460163
+2012-07-09,Columbia Rd & Belmont St NW,0,0.17863733
+2012-07-10,Columbia Rd & Belmont St NW,0,0.24827069
+2012-07-11,Columbia Rd & Belmont St NW,1,0.25172943
+2012-07-12,Columbia Rd & Belmont St NW,0,0.35433382
+2012-07-13,Columbia Rd & Belmont St NW,1,0.22026792
+2012-07-16,Columbia Rd & Belmont St NW,0,0.3501249
+2012-07-17,Columbia Rd & Belmont St NW,1,0.24655356
+2012-07-18,Columbia Rd & Belmont St NW,0,0.3525979
+2012-07-19,Columbia Rd & Belmont St NW,0,0.23068866
+2012-07-20,Columbia Rd & Belmont St NW,0,0.20413032
+2012-07-23,Columbia Rd & Belmont St NW,0,0.22915158
+2012-07-24,Columbia Rd & Belmont St NW,0,0.24244481
+2012-07-25,Columbia Rd & Belmont St NW,0,0.2631363
+2012-07-26,Columbia Rd & Belmont St NW,1,0.22204345
+2012-07-27,Columbia Rd & Belmont St NW,1,0.30523685
+2012-07-30,Columbia Rd & Belmont St NW,0,0.3175672
+2012-07-31,Columbia Rd & Belmont St NW,1,0.23563567
+2012-08-01,Columbia Rd & Belmont St NW,1,0.29928735
+2012-08-02,Columbia Rd & Belmont St NW,0,0.2880347
+2012-08-03,Columbia Rd & Belmont St NW,1,0.18673697
+2012-08-06,Columbia Rd & Belmont St NW,0,0.22073409
+2012-08-07,Columbia Rd & Belmont St NW,0,0.21009922
+2012-08-08,Columbia Rd & Belmont St NW,0,0.20572147
+2012-08-09,Columbia Rd & Belmont St NW,1,0.20071429
+2012-08-10,Columbia Rd & Belmont St NW,0,0.174301
+2012-08-13,Columbia Rd & Belmont St NW,0,0.20776783
+2012-08-14,Columbia Rd & Belmont St NW,0,0.16267535
+2012-08-15,Columbia Rd & Belmont St NW,1,0.21822473
+2012-08-16,Columbia Rd & Belmont St NW,1,0.31020644
+2012-08-17,Columbia Rd & Belmont St NW,0,0.22251233
+2012-08-20,Columbia Rd & Belmont St NW,0,0.21656325
+2012-08-21,Columbia Rd & Belmont St NW,1,0.22467865
+2012-08-22,Columbia Rd & Belmont St NW,0,0.32513958
+2012-08-23,Columbia Rd & Belmont St NW,0,0.2067872
+2012-08-24,Columbia Rd & Belmont St NW,1,0.19528697
+2012-08-27,Columbia Rd & Belmont St NW,1,0.31148514
+2012-08-28,Columbia Rd & Belmont St NW,1,0.30858362
+2012-08-29,Columbia Rd & Belmont St NW,0,0.33558068
+2012-08-30,Columbia Rd & Belmont St NW,0,0.22619435
+2012-08-31,Columbia Rd & Belmont St NW,0,0.19949861
+2012-09-04,Columbia Rd & Belmont St NW,1,0.21226823
+2012-09-05,Columbia Rd & Belmont St NW,1,0.29746994
+2012-09-06,Columbia Rd & Belmont St NW,0,0.2293435
+2012-09-07,Columbia Rd & Belmont St NW,1,0.20457132
+2012-09-10,Columbia Rd & Belmont St NW,0,0.29611132
+2012-09-11,Columbia Rd & Belmont St NW,0,0.22279409
+2012-09-12,Columbia Rd & Belmont St NW,0,0.22515148
+2012-09-13,Columbia Rd & Belmont St NW,0,0.21868795
+2012-09-14,Columbia Rd & Belmont St NW,0,0.20812517
+2012-09-17,Columbia Rd & Belmont St NW,1,0.21145292
+2012-09-18,Columbia Rd & Belmont St NW,0,0.2837151
+2012-09-19,Columbia Rd & Belmont St NW,1,0.2220433
+2012-09-20,Columbia Rd & Belmont St NW,0,0.28870264
+2012-09-21,Columbia Rd & Belmont St NW,0,0.19699782
+2012-09-24,Columbia Rd & Belmont St NW,0,0.21018928
+2012-09-25,Columbia Rd & Belmont St NW,0,0.21054968
+2012-09-26,Columbia Rd & Belmont St NW,1,0.21720827
+2012-09-27,Columbia Rd & Belmont St NW,1,0.29633737
+2012-09-28,Columbia Rd & Belmont St NW,0,0.25583923
+2012-10-01,Columbia Rd & Belmont St NW,1,0.2014115
+2012-10-02,Columbia Rd & Belmont St NW,0,0.2386784
+2012-10-03,Columbia Rd & Belmont St NW,0,0.21217766
+2012-10-04,Columbia Rd & Belmont St NW,0,0.17437911
+2012-10-05,Columbia Rd & Belmont St NW,1,0.20062725
+2012-10-09,Columbia Rd & Belmont St NW,0,0.27725545
+2012-10-10,Columbia Rd & Belmont St NW,0,0.21831731
+2012-10-11,Columbia Rd & Belmont St NW,0,0.20457132
+2012-10-12,Columbia Rd & Belmont St NW,0,0.2021105
+2012-10-15,Columbia Rd & Belmont St NW,0,0.1869017
+2012-10-16,Columbia Rd & Belmont St NW,1,0.21354114
+2012-10-17,Columbia Rd & Belmont St NW,1,0.2788891
+2012-10-18,Columbia Rd & Belmont St NW,0,0.27389783
+2012-10-19,Columbia Rd & Belmont St NW,0,0.15098599
+2012-10-22,Columbia Rd & Belmont St NW,0,0.21813232
+2012-10-23,Columbia Rd & Belmont St NW,0,0.20289902
+2012-10-24,Columbia Rd & Belmont St NW,0,0.22073409
+2012-10-25,Columbia Rd & Belmont St NW,0,0.20430654
+2012-10-26,Columbia Rd & Belmont St NW,0,0.18419611
+2012-10-31,Columbia Rd & Belmont St NW,0,0.18566817
+2012-11-01,Columbia Rd & Belmont St NW,1,0.16527854
+2012-11-02,Columbia Rd & Belmont St NW,0,0.2524456
+2012-11-05,Columbia Rd & Belmont St NW,0,0.18176292
+2012-11-06,Columbia Rd & Belmont St NW,0,0.1773671
+2012-11-07,Columbia Rd & Belmont St NW,0,0.17274484
+2012-11-08,Columbia Rd & Belmont St NW,0,0.17919506
+2012-11-09,Columbia Rd & Belmont St NW,0,0.15663454
+2012-11-13,Columbia Rd & Belmont St NW,0,0.13403112
+2012-11-14,Columbia Rd & Belmont St NW,0,0.16806649
+2012-11-15,Columbia Rd & Belmont St NW,0,0.1719709
+2012-11-16,Columbia Rd & Belmont St NW,0,0.16791493
+2012-11-19,Columbia Rd & Belmont St NW,0,0.1943508
+2012-11-20,Columbia Rd & Belmont St NW,0,0.19181508
+2012-11-21,Columbia Rd & Belmont St NW,1,0.17492652
+2012-11-23,Columbia Rd & Belmont St NW,0,0.21018928
+2012-11-26,Columbia Rd & Belmont St NW,1,0.16341585
+2012-11-27,Columbia Rd & Belmont St NW,0,0.18681924
+2012-11-28,Columbia Rd & Belmont St NW,1,0.15735258
+2012-11-29,Columbia Rd & Belmont St NW,0,0.24125102
+2012-11-30,Columbia Rd & Belmont St NW,1,0.13837114
+2012-12-03,Columbia Rd & Belmont St NW,0,0.23011151
+2012-12-04,Columbia Rd & Belmont St NW,0,0.16602841
+2012-12-05,Columbia Rd & Belmont St NW,1,0.13612275
+2012-12-06,Columbia Rd & Belmont St NW,1,0.2060762
+2012-12-07,Columbia Rd & Belmont St NW,0,0.14276223
+2012-12-10,Columbia Rd & Belmont St NW,0,0.15329549
+2012-12-11,Columbia Rd & Belmont St NW,0,0.1380481
+2012-12-12,Columbia Rd & Belmont St NW,1,0.13753247
+2012-12-13,Columbia Rd & Belmont St NW,0,0.18972127
+2012-12-14,Columbia Rd & Belmont St NW,0,0.11348131
+2012-12-17,Columbia Rd & Belmont St NW,0,0.13875978
+2012-12-18,Columbia Rd & Belmont St NW,0,0.14150533
+2012-12-19,Columbia Rd & Belmont St NW,0,0.12492301
+2012-12-20,Columbia Rd & Belmont St NW,0,0.13523209
+2012-12-21,Columbia Rd & Belmont St NW,0,0.11490815
+2012-12-24,Columbia Rd & Belmont St NW,0,0.12233673
+2012-12-26,Columbia Rd & Belmont St NW,0,0.092450775
+2012-12-27,Columbia Rd & Belmont St NW,0,0.11735839
+2012-12-28,Columbia Rd & Belmont St NW,0,0.10549692
+2012-12-31,Columbia Rd & Belmont St NW,0,0.1151291
+2012-07-02,Columbia Rd & Georgia Ave NW,0,0.006685637
+2012-07-03,Columbia Rd & Georgia Ave NW,0,0.0064973715
+2012-07-05,Columbia Rd & Georgia Ave NW,0,0.008292544
+2012-07-06,Columbia Rd & Georgia Ave NW,0,0.0076493844
+2012-07-09,Columbia Rd & Georgia Ave NW,0,0.005500049
+2012-07-10,Columbia Rd & Georgia Ave NW,0,0.0066676484
+2012-07-11,Columbia Rd & Georgia Ave NW,0,0.0072522685
+2012-07-12,Columbia Rd & Georgia Ave NW,0,0.00726008
+2012-07-13,Columbia Rd & Georgia Ave NW,0,0.0067945994
+2012-07-16,Columbia Rd & Georgia Ave NW,0,0.008459266
+2012-07-17,Columbia Rd & Georgia Ave NW,0,0.008359739
+2012-07-18,Columbia Rd & Georgia Ave NW,0,0.009364154
+2012-07-19,Columbia Rd & Georgia Ave NW,0,0.007093862
+2012-07-20,Columbia Rd & Georgia Ave NW,0,0.007295357
+2012-07-23,Columbia Rd & Georgia Ave NW,0,0.008208199
+2012-07-24,Columbia Rd & Georgia Ave NW,0,0.008974803
+2012-07-25,Columbia Rd & Georgia Ave NW,0,0.008708567
+2012-07-26,Columbia Rd & Georgia Ave NW,0,0.008514047
+2012-07-27,Columbia Rd & Georgia Ave NW,0,0.0094500985
+2012-07-30,Columbia Rd & Georgia Ave NW,0,0.009359122
+2012-07-31,Columbia Rd & Georgia Ave NW,0,0.009928944
+2012-08-01,Columbia Rd & Georgia Ave NW,0,0.00845927
+2012-08-02,Columbia Rd & Georgia Ave NW,0,0.00782852
+2012-08-03,Columbia Rd & Georgia Ave NW,0,0.0076989583
+2012-08-06,Columbia Rd & Georgia Ave NW,0,0.0070027336
+2012-08-07,Columbia Rd & Georgia Ave NW,0,0.008779105
+2012-08-08,Columbia Rd & Georgia Ave NW,0,0.008722633
+2012-08-09,Columbia Rd & Georgia Ave NW,0,0.008596882
+2012-08-10,Columbia Rd & Georgia Ave NW,0,0.0068313144
+2012-08-13,Columbia Rd & Georgia Ave NW,0,0.008907498
+2012-08-14,Columbia Rd & Georgia Ave NW,0,0.00762882
+2012-08-15,Columbia Rd & Georgia Ave NW,0,0.009859855
+2012-08-16,Columbia Rd & Georgia Ave NW,0,0.0099236155
+2012-08-17,Columbia Rd & Georgia Ave NW,0,0.015365342
+2012-08-20,Columbia Rd & Georgia Ave NW,0,0.010342575
+2012-08-21,Columbia Rd & Georgia Ave NW,0,0.010825411
+2012-08-22,Columbia Rd & Georgia Ave NW,0,0.010948098
+2012-08-23,Columbia Rd & Georgia Ave NW,0,0.010139113
+2012-08-24,Columbia Rd & Georgia Ave NW,0,0.010544423
+2012-08-27,Columbia Rd & Georgia Ave NW,0,0.0123057235
+2012-08-28,Columbia Rd & Georgia Ave NW,0,0.012975943
+2012-08-29,Columbia Rd & Georgia Ave NW,0,0.014612538
+2012-08-30,Columbia Rd & Georgia Ave NW,0,0.014098268
+2012-08-31,Columbia Rd & Georgia Ave NW,0,0.01317195
+2012-09-04,Columbia Rd & Georgia Ave NW,0,0.017822133
+2012-09-05,Columbia Rd & Georgia Ave NW,0,0.018867234
+2012-09-06,Columbia Rd & Georgia Ave NW,0,0.015373547
+2012-09-07,Columbia Rd & Georgia Ave NW,0,0.01925268
+2012-09-10,Columbia Rd & Georgia Ave NW,0,0.022435624
+2012-09-11,Columbia Rd & Georgia Ave NW,0,0.02316078
+2012-09-12,Columbia Rd & Georgia Ave NW,0,0.023870846
+2012-09-13,Columbia Rd & Georgia Ave NW,0,0.023013934
+2012-09-14,Columbia Rd & Georgia Ave NW,0,0.023050552
+2012-09-17,Columbia Rd & Georgia Ave NW,0,0.023870835
+2012-09-18,Columbia Rd & Georgia Ave NW,0,0.026915139
+2012-09-19,Columbia Rd & Georgia Ave NW,0,0.025088446
+2012-09-20,Columbia Rd & Georgia Ave NW,0,0.024719553
+2012-09-21,Columbia Rd & Georgia Ave NW,0,0.023308517
+2012-09-24,Columbia Rd & Georgia Ave NW,0,0.024824409
+2012-09-25,Columbia Rd & Georgia Ave NW,0,0.024693405
+2012-09-26,Columbia Rd & Georgia Ave NW,0,0.026103163
+2012-09-27,Columbia Rd & Georgia Ave NW,0,0.025856039
+2012-09-28,Columbia Rd & Georgia Ave NW,0,0.02369448
+2012-10-01,Columbia Rd & Georgia Ave NW,0,0.025382055
+2012-10-02,Columbia Rd & Georgia Ave NW,0,0.022340622
+2012-10-03,Columbia Rd & Georgia Ave NW,0,0.026604295
+2012-10-04,Columbia Rd & Georgia Ave NW,0,0.02156032
+2012-10-05,Columbia Rd & Georgia Ave NW,0,0.024903346
+2012-10-09,Columbia Rd & Georgia Ave NW,0,0.026394352
+2012-10-10,Columbia Rd & Georgia Ave NW,0,0.027883729
+2012-10-11,Columbia Rd & Georgia Ave NW,0,0.024563089
+2012-10-12,Columbia Rd & Georgia Ave NW,0,0.025706165
+2012-10-15,Columbia Rd & Georgia Ave NW,0,0.023370363
+2012-10-16,Columbia Rd & Georgia Ave NW,0,0.026986292
+2012-10-17,Columbia Rd & Georgia Ave NW,0,0.02602053
+2012-10-18,Columbia Rd & Georgia Ave NW,0,0.025828728
+2012-10-19,Columbia Rd & Georgia Ave NW,0,0.02000429
+2012-10-22,Columbia Rd & Georgia Ave NW,0,0.027287053
+2012-10-23,Columbia Rd & Georgia Ave NW,0,0.026020523
+2012-10-24,Columbia Rd & Georgia Ave NW,0,0.028149648
+2012-10-25,Columbia Rd & Georgia Ave NW,0,0.026130756
+2012-10-26,Columbia Rd & Georgia Ave NW,0,0.023858195
+2012-10-31,Columbia Rd & Georgia Ave NW,0,0.023320884
+2012-11-01,Columbia Rd & Georgia Ave NW,0,0.021583218
+2012-11-02,Columbia Rd & Georgia Ave NW,0,0.02343236
+2012-11-05,Columbia Rd & Georgia Ave NW,0,0.022376208
+2012-11-06,Columbia Rd & Georgia Ave NW,0,0.020707447
+2012-11-07,Columbia Rd & Georgia Ave NW,0,0.020532152
+2012-11-08,Columbia Rd & Georgia Ave NW,0,0.02063058
+2012-11-09,Columbia Rd & Georgia Ave NW,0,0.019314256
+2012-11-13,Columbia Rd & Georgia Ave NW,0,0.01737196
+2012-11-14,Columbia Rd & Georgia Ave NW,0,0.019028598
+2012-11-15,Columbia Rd & Georgia Ave NW,0,0.020412482
+2012-11-16,Columbia Rd & Georgia Ave NW,0,0.020412473
+2012-11-19,Columbia Rd & Georgia Ave NW,0,0.022940863
+2012-11-20,Columbia Rd & Georgia Ave NW,0,0.02260281
+2012-11-21,Columbia Rd & Georgia Ave NW,0,0.021163374
+2012-11-23,Columbia Rd & Georgia Ave NW,0,0.016762221
+2012-11-26,Columbia Rd & Georgia Ave NW,0,0.018147912
+2012-11-27,Columbia Rd & Georgia Ave NW,0,0.01611322
+2012-11-28,Columbia Rd & Georgia Ave NW,0,0.017206037
+2012-11-29,Columbia Rd & Georgia Ave NW,0,0.017316489
+2012-11-30,Columbia Rd & Georgia Ave NW,0,0.01616491
+2012-12-03,Columbia Rd & Georgia Ave NW,0,0.018032262
+2012-12-04,Columbia Rd & Georgia Ave NW,0,0.018440211
+2012-12-05,Columbia Rd & Georgia Ave NW,0,0.014519099
+2012-12-06,Columbia Rd & Georgia Ave NW,0,0.013829361
+2012-12-07,Columbia Rd & Georgia Ave NW,0,0.012762293
+2012-12-10,Columbia Rd & Georgia Ave NW,0,0.017307255
+2012-12-11,Columbia Rd & Georgia Ave NW,0,0.014944298
+2012-12-12,Columbia Rd & Georgia Ave NW,0,0.014761719
+2012-12-13,Columbia Rd & Georgia Ave NW,0,0.012968996
+2012-12-14,Columbia Rd & Georgia Ave NW,0,0.012606019
+2012-12-17,Columbia Rd & Georgia Ave NW,0,0.01522642
+2012-12-18,Columbia Rd & Georgia Ave NW,0,0.015104879
+2012-12-19,Columbia Rd & Georgia Ave NW,0,0.01380717
+2012-12-20,Columbia Rd & Georgia Ave NW,0,0.014211834
+2012-12-21,Columbia Rd & Georgia Ave NW,0,0.012109471
+2012-12-24,Columbia Rd & Georgia Ave NW,0,0.012948179
+2012-12-26,Columbia Rd & Georgia Ave NW,0,0.010623959
+2012-12-27,Columbia Rd & Georgia Ave NW,0,0.011801859
+2012-12-28,Columbia Rd & Georgia Ave NW,0,0.011251794
+2012-12-31,Columbia Rd & Georgia Ave NW,0,0.012332133
+2012-07-02,Georgia Ave and Fairmont St NW,0,0.008319361
+2012-07-03,Georgia Ave and Fairmont St NW,0,0.008305937
+2012-07-05,Georgia Ave and Fairmont St NW,0,0.010692613
+2012-07-06,Georgia Ave and Fairmont St NW,0,0.009843975
+2012-07-09,Georgia Ave and Fairmont St NW,0,0.008509472
+2012-07-10,Georgia Ave and Fairmont St NW,0,0.009955651
+2012-07-11,Georgia Ave and Fairmont St NW,0,0.011060283
+2012-07-12,Georgia Ave and Fairmont St NW,0,0.010854504
+2012-07-13,Georgia Ave and Fairmont St NW,0,0.009071831
+2012-07-16,Georgia Ave and Fairmont St NW,0,0.011808185
+2012-07-17,Georgia Ave and Fairmont St NW,0,0.0112759685
+2012-07-18,Georgia Ave and Fairmont St NW,0,0.012531962
+2012-07-19,Georgia Ave and Fairmont St NW,0,0.01000927
+2012-07-20,Georgia Ave and Fairmont St NW,0,0.010232107
+2012-07-23,Georgia Ave and Fairmont St NW,0,0.011458881
+2012-07-24,Georgia Ave and Fairmont St NW,0,0.012168021
+2012-07-25,Georgia Ave and Fairmont St NW,0,0.012769133
+2012-07-26,Georgia Ave and Fairmont St NW,0,0.011707329
+2012-07-27,Georgia Ave and Fairmont St NW,0,0.01225309
+2012-07-30,Georgia Ave and Fairmont St NW,0,0.012619542
+2012-07-31,Georgia Ave and Fairmont St NW,0,0.013711469
+2012-08-01,Georgia Ave and Fairmont St NW,0,0.011452731
+2012-08-02,Georgia Ave and Fairmont St NW,0,0.010387098
+2012-08-03,Georgia Ave and Fairmont St NW,0,0.009907634
+2012-08-06,Georgia Ave and Fairmont St NW,0,0.009516344
+2012-08-07,Georgia Ave and Fairmont St NW,0,0.011650968
+2012-08-08,Georgia Ave and Fairmont St NW,0,0.011440455
+2012-08-09,Georgia Ave and Fairmont St NW,0,0.0112941265
+2012-08-10,Georgia Ave and Fairmont St NW,0,0.0094755255
+2012-08-13,Georgia Ave and Fairmont St NW,0,0.0117010465
+2012-08-14,Georgia Ave and Fairmont St NW,0,0.010618263
+2012-08-15,Georgia Ave and Fairmont St NW,0,0.013157858
+2012-08-16,Georgia Ave and Fairmont St NW,0,0.013457028
+2012-08-17,Georgia Ave and Fairmont St NW,0,0.019940559
+2012-08-20,Georgia Ave and Fairmont St NW,0,0.014098268
+2012-08-21,Georgia Ave and Fairmont St NW,0,0.015137196
+2012-08-22,Georgia Ave and Fairmont St NW,0,0.014777498
+2012-08-23,Georgia Ave and Fairmont St NW,0,0.01368216
+2012-08-24,Georgia Ave and Fairmont St NW,0,0.013493103
+2012-08-27,Georgia Ave and Fairmont St NW,0,0.016869863
+2012-08-28,Georgia Ave and Fairmont St NW,0,0.017850637
+2012-08-29,Georgia Ave and Fairmont St NW,0,0.020164456
+2012-08-30,Georgia Ave and Fairmont St NW,0,0.01894776
+2012-08-31,Georgia Ave and Fairmont St NW,0,0.017699096
+2012-09-04,Georgia Ave and Fairmont St NW,0,0.025194835
+2012-09-05,Georgia Ave and Fairmont St NW,0,0.026492128
+2012-09-06,Georgia Ave and Fairmont St NW,0,0.022328783
+2012-09-07,Georgia Ave and Fairmont St NW,0,0.027576547
+2012-09-10,Georgia Ave and Fairmont St NW,0,0.032327365
+2012-09-11,Georgia Ave and Fairmont St NW,0,0.03320421
+2012-09-12,Georgia Ave and Fairmont St NW,0,0.033996917
+2012-09-13,Georgia Ave and Fairmont St NW,0,0.032857623
+2012-09-14,Georgia Ave and Fairmont St NW,0,0.03315199
+2012-09-17,Georgia Ave and Fairmont St NW,0,0.034427136
+2012-09-18,Georgia Ave and Fairmont St NW,0,0.038321957
+2012-09-19,Georgia Ave and Fairmont St NW,0,0.036390893
+2012-09-20,Georgia Ave and Fairmont St NW,0,0.03567483
+2012-09-21,Georgia Ave and Fairmont St NW,0,0.033677675
+2012-09-24,Georgia Ave and Fairmont St NW,0,0.03573086
+2012-09-25,Georgia Ave and Fairmont St NW,0,0.036087725
+2012-09-26,Georgia Ave and Fairmont St NW,0,0.038102634
+2012-09-27,Georgia Ave and Fairmont St NW,0,0.037354175
+2012-09-28,Georgia Ave and Fairmont St NW,0,0.03455361
+2012-10-01,Georgia Ave and Fairmont St NW,0,0.03737371
+2012-10-02,Georgia Ave and Fairmont St NW,0,0.03405044
+2012-10-03,Georgia Ave and Fairmont St NW,0,0.039313823
+2012-10-04,Georgia Ave and Fairmont St NW,0,0.032497507
+2012-10-05,Georgia Ave and Fairmont St NW,0,0.036696494
+2012-10-09,Georgia Ave and Fairmont St NW,0,0.039539814
+2012-10-10,Georgia Ave and Fairmont St NW,0,0.040964916
+2012-10-11,Georgia Ave and Fairmont St NW,0,0.036600754
+2012-10-12,Georgia Ave and Fairmont St NW,0,0.03812255
+2012-10-15,Georgia Ave and Fairmont St NW,0,0.035843186
+2012-10-16,Georgia Ave and Fairmont St NW,0,0.04005814
+2012-10-17,Georgia Ave and Fairmont St NW,0,0.038341977
+2012-10-18,Georgia Ave and Fairmont St NW,0,0.038683478
+2012-10-19,Georgia Ave and Fairmont St NW,0,0.03027187
+2012-10-22,Georgia Ave and Fairmont St NW,0,0.040141687
+2012-10-23,Georgia Ave and Fairmont St NW,0,0.038643178
+2012-10-24,Georgia Ave and Fairmont St NW,0,0.04158749
+2012-10-25,Georgia Ave and Fairmont St NW,0,0.038906045
+2012-10-26,Georgia Ave and Fairmont St NW,0,0.03550721
+2012-10-31,Georgia Ave and Fairmont St NW,0,0.03560023
+2012-11-01,Georgia Ave and Fairmont St NW,0,0.033466436
+2012-11-02,Georgia Ave and Fairmont St NW,0,0.03601228
+2012-11-05,Georgia Ave and Fairmont St NW,0,0.034589816
+2012-11-06,Georgia Ave and Fairmont St NW,0,0.03284041
+2012-11-07,Georgia Ave and Fairmont St NW,0,0.032107435
+2012-11-08,Georgia Ave and Fairmont St NW,0,0.031939287
+2012-11-09,Georgia Ave and Fairmont St NW,0,0.030303732
+2012-11-13,Georgia Ave and Fairmont St NW,0,0.027693175
+2012-11-14,Georgia Ave and Fairmont St NW,0,0.030255944
+2012-11-15,Georgia Ave and Fairmont St NW,0,0.031721935
+2012-11-16,Georgia Ave and Fairmont St NW,0,0.03148943
+2012-11-19,Georgia Ave and Fairmont St NW,0,0.035174306
+2012-11-20,Georgia Ave and Fairmont St NW,0,0.034789678
+2012-11-21,Georgia Ave and Fairmont St NW,0,0.033186793
+2012-11-23,Georgia Ave and Fairmont St NW,0,0.026590245
+2012-11-26,Georgia Ave and Fairmont St NW,0,0.028403077
+2012-11-27,Georgia Ave and Fairmont St NW,0,0.025815079
+2012-11-28,Georgia Ave and Fairmont St NW,0,0.027071878
+2012-11-29,Georgia Ave and Fairmont St NW,0,0.027474897
+2012-11-30,Georgia Ave and Fairmont St NW,0,0.02528826
+2012-12-03,Georgia Ave and Fairmont St NW,0,0.026900942
+2012-12-04,Georgia Ave and Fairmont St NW,0,0.027883716
+2012-12-05,Georgia Ave and Fairmont St NW,0,0.02244753
+2012-12-06,Georgia Ave and Fairmont St NW,0,0.021640578
+2012-12-07,Georgia Ave and Fairmont St NW,0,0.019489726
+2012-12-10,Georgia Ave and Fairmont St NW,0,0.026269177
+2012-12-11,Georgia Ave and Fairmont St NW,0,0.022722976
+2012-12-12,Georgia Ave and Fairmont St NW,0,0.022626797
+2012-12-13,Georgia Ave and Fairmont St NW,0,0.020110928
+2012-12-14,Georgia Ave and Fairmont St NW,0,0.019687684
+2012-12-17,Georgia Ave and Fairmont St NW,0,0.02316078
+2012-12-18,Georgia Ave and Fairmont St NW,0,0.023494516
+2012-12-19,Georgia Ave and Fairmont St NW,0,0.021698087
+2012-12-20,Georgia Ave and Fairmont St NW,0,0.021140905
+2012-12-21,Georgia Ave and Fairmont St NW,0,0.018070737
+2012-12-24,Georgia Ave and Fairmont St NW,0,0.01971913
+2012-12-26,Georgia Ave and Fairmont St NW,0,0.016504873
+2012-12-27,Georgia Ave and Fairmont St NW,0,0.018176934
+2012-12-28,Georgia Ave and Fairmont St NW,0,0.016996302
+2012-12-31,Georgia Ave and Fairmont St NW,0,0.018787077
+2012-07-02,Georgia & New Hampshire Ave NW,0,0.051840127
+2012-07-03,Georgia & New Hampshire Ave NW,0,0.046181843
+2012-07-05,Georgia & New Hampshire Ave NW,0,0.051256556
+2012-07-06,Georgia & New Hampshire Ave NW,0,0.04554088
+2012-07-09,Georgia & New Hampshire Ave NW,0,0.032497507
+2012-07-10,Georgia & New Hampshire Ave NW,0,0.049339
+2012-07-11,Georgia & New Hampshire Ave NW,0,0.057440385
+2012-07-12,Georgia & New Hampshire Ave NW,0,0.052000392
+2012-07-13,Georgia & New Hampshire Ave NW,0,0.040414322
+2012-07-16,Georgia & New Hampshire Ave NW,0,0.05015974
+2012-07-17,Georgia & New Hampshire Ave NW,0,0.050653152
+2012-07-18,Georgia & New Hampshire Ave NW,0,0.053408775
+2012-07-19,Georgia & New Hampshire Ave NW,0,0.0470012
+2012-07-20,Georgia & New Hampshire Ave NW,0,0.042949107
+2012-07-23,Georgia & New Hampshire Ave NW,0,0.048631392
+2012-07-24,Georgia & New Hampshire Ave NW,0,0.048832566
+2012-07-25,Georgia & New Hampshire Ave NW,0,0.058507007
+2012-07-26,Georgia & New Hampshire Ave NW,0,0.050627064
+2012-07-27,Georgia & New Hampshire Ave NW,0,0.04502484
+2012-07-30,Georgia & New Hampshire Ave NW,0,0.05049684
+2012-07-31,Georgia & New Hampshire Ave NW,1,0.052456886
+2012-08-01,Georgia & New Hampshire Ave NW,0,0.10132237
+2012-08-02,Georgia & New Hampshire Ave NW,0,0.04382726
+2012-08-03,Georgia & New Hampshire Ave NW,0,0.039293315
+2012-08-06,Georgia & New Hampshire Ave NW,0,0.03225953
+2012-08-07,Georgia & New Hampshire Ave NW,0,0.04875703
+2012-08-08,Georgia & New Hampshire Ave NW,0,0.047612492
+2012-08-09,Georgia & New Hampshire Ave NW,0,0.046686295
+2012-08-10,Georgia & New Hampshire Ave NW,0,0.028373156
+2012-08-13,Georgia & New Hampshire Ave NW,0,0.046062496
+2012-08-14,Georgia & New Hampshire Ave NW,0,0.03582444
+2012-08-15,Georgia & New Hampshire Ave NW,0,0.0551069
+2012-08-16,Georgia & New Hampshire Ave NW,0,0.05324446
+2012-08-17,Georgia & New Hampshire Ave NW,0,0.05149455
+2012-08-20,Georgia & New Hampshire Ave NW,0,0.05493764
+2012-08-21,Georgia & New Hampshire Ave NW,0,0.0572351
+2012-08-22,Georgia & New Hampshire Ave NW,0,0.058327977
+2012-08-23,Georgia & New Hampshire Ave NW,0,0.05302612
+2012-08-24,Georgia & New Hampshire Ave NW,0,0.04753875
+2012-08-27,Georgia & New Hampshire Ave NW,0,0.059047263
+2012-08-28,Georgia & New Hampshire Ave NW,0,0.06280195
+2012-08-29,Georgia & New Hampshire Ave NW,0,0.06859291
+2012-08-30,Georgia & New Hampshire Ave NW,0,0.06273816
+2012-08-31,Georgia & New Hampshire Ave NW,0,0.05553219
+2012-09-04,Georgia & New Hampshire Ave NW,0,0.07088049
+2012-09-05,Georgia & New Hampshire Ave NW,0,0.07601044
+2012-09-06,Georgia & New Hampshire Ave NW,0,0.05423766
+2012-09-07,Georgia & New Hampshire Ave NW,0,0.06946453
+2012-09-10,Georgia & New Hampshire Ave NW,0,0.08067073
+2012-09-11,Georgia & New Hampshire Ave NW,0,0.08135742
+2012-09-12,Georgia & New Hampshire Ave NW,0,0.08399052
+2012-09-13,Georgia & New Hampshire Ave NW,0,0.08087218
+2012-09-14,Georgia & New Hampshire Ave NW,0,0.079313256
+2012-09-17,Georgia & New Hampshire Ave NW,0,0.080751255
+2012-09-18,Georgia & New Hampshire Ave NW,0,0.09109425
+2012-09-19,Georgia & New Hampshire Ave NW,0,0.08687279
+2012-09-20,Georgia & New Hampshire Ave NW,0,0.083283655
+2012-09-21,Georgia & New Hampshire Ave NW,0,0.07525189
+2012-09-24,Georgia & New Hampshire Ave NW,0,0.080831856
+2012-09-25,Georgia & New Hampshire Ave NW,0,0.0827467
+2012-09-26,Georgia & New Hampshire Ave NW,0,0.08804181
+2012-09-27,Georgia & New Hampshire Ave NW,0,0.08812902
+2012-09-28,Georgia & New Hampshire Ave NW,1,0.07723878
+2012-10-01,Georgia & New Hampshire Ave NW,0,0.14091325
+2012-10-02,Georgia & New Hampshire Ave NW,0,0.07145431
+2012-10-03,Georgia & New Hampshire Ave NW,0,0.08926919
+2012-10-04,Georgia & New Hampshire Ave NW,0,0.068870716
+2012-10-05,Georgia & New Hampshire Ave NW,0,0.0791945
+2012-10-09,Georgia & New Hampshire Ave NW,0,0.085632786
+2012-10-10,Georgia & New Hampshire Ave NW,0,0.091454186
+2012-10-11,Georgia & New Hampshire Ave NW,0,0.08006924
+2012-10-12,Georgia & New Hampshire Ave NW,0,0.079750165
+2012-10-15,Georgia & New Hampshire Ave NW,0,0.076277636
+2012-10-16,Georgia & New Hampshire Ave NW,0,0.08601588
+2012-10-17,Georgia & New Hampshire Ave NW,0,0.0832008
+2012-10-18,Georgia & New Hampshire Ave NW,0,0.08482909
+2012-10-19,Georgia & New Hampshire Ave NW,0,0.0593494
+2012-10-22,Georgia & New Hampshire Ave NW,0,0.08661486
+2012-10-23,Georgia & New Hampshire Ave NW,0,0.08278797
+2012-10-24,Georgia & New Hampshire Ave NW,0,0.092359796
+2012-10-25,Georgia & New Hampshire Ave NW,0,0.08503993
+2012-10-26,Georgia & New Hampshire Ave NW,0,0.07420156
+2012-10-31,Georgia & New Hampshire Ave NW,0,0.07375557
+2012-11-01,Georgia & New Hampshire Ave NW,0,0.062706284
+2012-11-02,Georgia & New Hampshire Ave NW,0,0.06978084
+2012-11-05,Georgia & New Hampshire Ave NW,0,0.07031096
+2012-11-06,Georgia & New Hampshire Ave NW,0,0.065704644
+2012-11-07,Georgia & New Hampshire Ave NW,0,0.06600506
+2012-11-08,Georgia & New Hampshire Ave NW,0,0.06553834
+2012-11-09,Georgia & New Hampshire Ave NW,0,0.057352304
+2012-11-13,Georgia & New Hampshire Ave NW,0,0.051415138
+2012-11-14,Georgia & New Hampshire Ave NW,0,0.061913807
+2012-11-15,Georgia & New Hampshire Ave NW,0,0.06428701
+2012-11-16,Georgia & New Hampshire Ave NW,0,0.060975153
+2012-11-19,Georgia & New Hampshire Ave NW,0,0.07513868
+2012-11-20,Georgia & New Hampshire Ave NW,0,0.072141245
+2012-11-21,Georgia & New Hampshire Ave NW,0,0.067185394
+2012-11-23,Georgia & New Hampshire Ave NW,0,0.050601035
+2012-11-26,Georgia & New Hampshire Ave NW,0,0.057147376
+2012-11-27,Georgia & New Hampshire Ave NW,0,0.047465093
+2012-11-28,Georgia & New Hampshire Ave NW,0,0.05682663
+2012-11-29,Georgia & New Hampshire Ave NW,0,0.056478675
+2012-11-30,Georgia & New Hampshire Ave NW,0,0.048958723
+2012-12-03,Georgia & New Hampshire Ave NW,0,0.056104057
+2012-12-04,Georgia & New Hampshire Ave NW,0,0.059774883
+2012-12-05,Georgia & New Hampshire Ave NW,0,0.045895893
+2012-12-06,Georgia & New Hampshire Ave NW,0,0.046086367
+2012-12-07,Georgia & New Hampshire Ave NW,0,0.034517422
+2012-12-10,Georgia & New Hampshire Ave NW,0,0.056247864
+2012-12-11,Georgia & New Hampshire Ave NW,0,0.049034555
+2012-12-12,Georgia & New Hampshire Ave NW,0,0.047785014
+2012-12-13,Georgia & New Hampshire Ave NW,0,0.041479502
+2012-12-14,Georgia & New Hampshire Ave NW,0,0.037825245
+2012-12-17,Georgia & New Hampshire Ave NW,0,0.048231333
+2012-12-18,Georgia & New Hampshire Ave NW,0,0.048306093
+2012-12-19,Georgia & New Hampshire Ave NW,0,0.04303839
+2012-12-20,Georgia & New Hampshire Ave NW,0,0.044422243
+2012-12-21,Georgia & New Hampshire Ave NW,0,0.037687276
+2012-12-24,Georgia & New Hampshire Ave NW,0,0.040625233
+2012-12-26,Georgia & New Hampshire Ave NW,0,0.031209363
+2012-12-27,Georgia & New Hampshire Ave NW,0,0.038703665
+2012-12-28,Georgia & New Hampshire Ave NW,0,0.03341382
+2012-12-31,Georgia & New Hampshire Ave NW,0,0.037354175
+2012-07-02,14th St & Spring Rd NW,0,0.015655285
+2012-07-03,14th St & Spring Rd NW,0,0.015024377
+2012-07-05,14th St & Spring Rd NW,0,0.018186612
+2012-07-06,14th St & Spring Rd NW,0,0.016960073
+2012-07-09,14th St & Spring Rd NW,0,0.0126601625
+2012-07-10,14th St & Spring Rd NW,0,0.016121818
+2012-07-11,14th St & Spring Rd NW,0,0.017492767
+2012-07-12,14th St & Spring Rd NW,0,0.017399766
+2012-07-13,14th St & Spring Rd NW,0,0.015258994
+2012-07-16,14th St & Spring Rd NW,0,0.019427612
+2012-07-17,14th St & Spring Rd NW,0,0.018128574
+2012-07-18,14th St & Spring Rd NW,0,0.019855924
+2012-07-19,14th St & Spring Rd NW,0,0.01571392
+2012-07-20,14th St & Spring Rd NW,0,0.01545588
+2012-07-23,14th St & Spring Rd NW,0,0.017586255
+2012-07-24,14th St & Spring Rd NW,0,0.019018482
+2012-07-25,14th St & Spring Rd NW,0,0.019666769
+2012-07-26,14th St & Spring Rd NW,0,0.017567517
+2012-07-27,14th St & Spring Rd NW,0,0.018548535
+2012-07-30,14th St & Spring Rd NW,0,0.019242438
+2012-07-31,14th St & Spring Rd NW,0,0.020532142
+2012-08-01,14th St & Spring Rd NW,0,0.017325724
+2012-08-02,14th St & Spring Rd NW,0,0.016286151
+2012-08-03,14th St & Spring Rd NW,0,0.014960276
+2012-08-06,14th St & Spring Rd NW,0,0.014053092
+2012-08-07,14th St & Spring Rd NW,0,0.017464818
+2012-08-08,14th St & Spring Rd NW,0,0.01716023
+2012-08-09,14th St & Spring Rd NW,0,0.016762227
+2012-08-10,14th St & Spring Rd NW,0,0.013094592
+2012-08-13,14th St & Spring Rd NW,0,0.017689647
+2012-08-14,14th St & Spring Rd NW,0,0.015177691
+2012-08-15,14th St & Spring Rd NW,0,0.019293718
+2012-08-16,14th St & Spring Rd NW,0,0.019961782
+2012-08-17,14th St & Spring Rd NW,0,0.028134821
+2012-08-20,14th St & Spring Rd NW,0,0.020477667
+2012-08-21,14th St & Spring Rd NW,0,0.022140063
+2012-08-22,14th St & Spring Rd NW,0,0.022069693
+2012-08-23,14th St & Spring Rd NW,0,0.01986648
+2012-08-24,14th St & Spring Rd NW,0,0.020185908
+2012-08-27,14th St & Spring Rd NW,0,0.024615139
+2012-08-28,14th St & Spring Rd NW,0,0.024929706
+2012-08-29,14th St & Spring Rd NW,0,0.028508063
+2012-08-30,14th St & Spring Rd NW,0,0.027373606
+2012-08-31,14th St & Spring Rd NW,0,0.025088446
+2012-09-04,14th St & Spring Rd NW,0,0.03469872
+2012-09-05,14th St & Spring Rd NW,0,0.0367157
+2012-09-06,14th St & Spring Rd NW,0,0.02956333
+2012-09-07,14th St & Spring Rd NW,0,0.037844982
+2012-09-10,14th St & Spring Rd NW,0,0.04387276
+2012-09-11,14th St & Spring Rd NW,0,0.04528215
+2012-09-12,14th St & Spring Rd NW,0,0.046613943
+2012-09-13,14th St & Spring Rd NW,0,0.045399573
+2012-09-14,14th St & Spring Rd NW,0,0.045141645
+2012-09-17,14th St & Spring Rd NW,0,0.047025535
+2012-09-18,14th St & Spring Rd NW,0,0.05062709
+2012-09-19,14th St & Spring Rd NW,0,0.04903458
+2012-09-20,14th St & Spring Rd NW,0,0.048206426
+2012-09-21,14th St & Spring Rd NW,0,0.04542307
+2012-09-24,14th St & Spring Rd NW,0,0.047834378
+2012-09-25,14th St & Spring Rd NW,0,0.047834378
+2012-09-26,14th St & Spring Rd NW,0,0.051019654
+2012-09-27,14th St & Spring Rd NW,0,0.051840127
+2012-09-28,14th St & Spring Rd NW,0,0.0469769
+2012-10-01,14th St & Spring Rd NW,0,0.049262747
+2012-10-02,14th St & Spring Rd NW,0,0.04416957
+2012-10-03,14th St & Spring Rd NW,0,0.052510854
+2012-10-04,14th St & Spring Rd NW,0,0.042859953
+2012-10-05,14th St & Spring Rd NW,0,0.0493136
+2012-10-09,14th St & Spring Rd NW,0,0.05034098
+2012-10-10,14th St & Spring Rd NW,0,0.053987738
+2012-10-11,14th St & Spring Rd NW,0,0.046758782
+2012-10-12,14th St & Spring Rd NW,0,0.048731893
+2012-10-15,14th St & Spring Rd NW,0,0.04565892
+2012-10-16,14th St & Spring Rd NW,0,0.052000392
+2012-10-17,14th St & Spring Rd NW,0,0.04944091
+2012-10-18,14th St & Spring Rd NW,0,0.049619712
+2012-10-19,14th St & Spring Rd NW,0,0.03836197
+2012-10-22,14th St & Spring Rd NW,0,0.051760186
+2012-10-23,14th St & Spring Rd NW,0,0.049824774
+2012-10-24,14th St & Spring Rd NW,0,0.0540155
+2012-10-25,14th St & Spring Rd NW,0,0.05008224
+2012-10-26,14th St & Spring Rd NW,0,0.045824703
+2012-10-31,14th St & Spring Rd NW,0,0.04266009
+2012-11-01,14th St & Spring Rd NW,0,0.039129786
+2012-11-02,14th St & Spring Rd NW,0,0.041934874
+2012-11-05,14th St & Spring Rd NW,0,0.03966361
+2012-11-06,14th St & Spring Rd NW,0,0.036448
+2012-11-07,14th St & Spring Rd NW,0,0.03614438
+2012-11-08,14th St & Spring Rd NW,0,0.0367157
+2012-11-09,14th St & Spring Rd NW,0,0.034050405
+2012-11-13,14th St & Spring Rd NW,0,0.030081341
+2012-11-14,14th St & Spring Rd NW,0,0.033273924
+2012-11-15,14th St & Spring Rd NW,0,0.035358895
+2012-11-16,14th St & Spring Rd NW,0,0.03532186
+2012-11-19,14th St & Spring Rd NW,0,0.039974775
+2012-11-20,14th St & Spring Rd NW,0,0.039539814
+2012-11-21,14th St & Spring Rd NW,0,0.036106605
+2012-11-23,14th St & Spring Rd NW,0,0.02858329
+2012-11-26,14th St & Spring Rd NW,0,0.030931704
+2012-11-27,14th St & Spring Rd NW,0,0.027518416
+2012-11-28,14th St & Spring Rd NW,0,0.02948563
+2012-11-29,14th St & Spring Rd NW,0,0.029392617
+2012-11-30,14th St & Spring Rd NW,0,0.026957797
+2012-12-03,14th St & Spring Rd NW,0,0.030608114
+2012-12-04,14th St & Spring Rd NW,0,0.032208756
+2012-12-05,14th St & Spring Rd NW,0,0.025570618
+2012-12-06,14th St & Spring Rd NW,0,0.023308517
+2012-12-07,14th St & Spring Rd NW,0,0.020707438
+2012-12-10,14th St & Spring Rd NW,0,0.029377127
+2012-12-11,14th St & Spring Rd NW,0,0.025395459
+2012-12-12,14th St & Spring Rd NW,0,0.024317315
+2012-12-13,14th St & Spring Rd NW,0,0.021606147
+2012-12-14,14th St & Spring Rd NW,0,0.020401634
+2012-12-17,14th St & Spring Rd NW,0,0.025842361
+2012-12-18,14th St & Spring Rd NW,0,0.025924439
+2012-12-19,14th St & Spring Rd NW,0,0.02271094
+2012-12-20,14th St & Spring Rd NW,0,0.023111733
+2012-12-21,14th St & Spring Rd NW,0,0.019898204
+2012-12-24,14th St & Spring Rd NW,0,0.020619627
+2012-12-26,14th St & Spring Rd NW,0,0.016566634
+2012-12-27,14th St & Spring Rd NW,0,0.019170899
+2012-12-28,14th St & Spring Rd NW,0,0.017680237
+2012-12-31,14th St & Spring Rd NW,0,0.019211756
+2012-07-02,9th & Upshur St NW,0,0.007596032
+2012-07-03,9th & Upshur St NW,0,0.007563381
+2012-07-05,9th & Upshur St NW,0,0.009394396
+2012-07-06,9th & Upshur St NW,0,0.008912293
+2012-07-09,9th & Upshur St NW,0,0.0075919423
+2012-07-10,9th & Upshur St NW,0,0.008427473
+2012-07-11,9th & Upshur St NW,0,0.009354091
+2012-07-12,9th & Upshur St NW,0,0.009204468
+2012-07-13,9th & Upshur St NW,0,0.007879253
+2012-07-16,9th & Upshur St NW,0,0.010095651
+2012-07-17,9th & Upshur St NW,0,0.009526584
+2012-07-18,9th & Upshur St NW,0,0.010567084
+2012-07-19,9th & Upshur St NW,0,0.008297007
+2012-07-20,9th & Upshur St NW,0,0.008624667
+2012-07-23,9th & Upshur St NW,0,0.0094602555
+2012-07-24,9th & Upshur St NW,0,0.0102376
+2012-07-25,9th & Upshur St NW,0,0.010454237
+2012-07-26,9th & Upshur St NW,0,0.0095112305
+2012-07-27,9th & Upshur St NW,0,0.010287199
+2012-07-30,9th & Upshur St NW,0,0.01043741
+2012-07-31,9th & Upshur St NW,0,0.011269926
+2012-08-01,9th & Upshur St NW,0,0.009179756
+2012-08-02,9th & Upshur St NW,0,0.008404831
+2012-08-03,9th & Upshur St NW,0,0.008033404
+2012-08-06,9th & Upshur St NW,0,0.007998896
+2012-08-07,9th & Upshur St NW,0,0.009283964
+2012-08-08,9th & Upshur St NW,0,0.009140366
+2012-08-09,9th & Upshur St NW,0,0.008941089
+2012-08-10,9th & Upshur St NW,0,0.007977399
+2012-08-13,9th & Upshur St NW,0,0.009567618
+2012-08-14,9th & Upshur St NW,0,0.008793287
+2012-08-15,9th & Upshur St NW,0,0.010387094
+2012-08-16,9th & Upshur St NW,0,0.010623959
+2012-08-17,9th & Upshur St NW,0,0.017014433
+2012-08-20,9th & Upshur St NW,0,0.011185597
+2012-08-21,9th & Upshur St NW,0,0.011999632
+2012-08-22,9th & Upshur St NW,0,0.011852585
+2012-08-23,9th & Upshur St NW,0,0.010842863
+2012-08-24,9th & Upshur St NW,0,0.010983399
+2012-08-27,9th & Upshur St NW,0,0.01355824
+2012-08-28,9th & Upshur St NW,0,0.013881254
+2012-08-29,9th & Upshur St NW,0,0.015840285
+2012-08-30,9th & Upshur St NW,0,0.015169575
+2012-08-31,9th & Upshur St NW,0,0.014181456
+2012-09-04,9th & Upshur St NW,0,0.020110918
+2012-09-05,9th & Upshur St NW,0,0.02096201
+2012-09-06,9th & Upshur St NW,0,0.018215692
+2012-09-07,9th & Upshur St NW,0,0.02245944
+2012-09-10,9th & Upshur St NW,0,0.026618348
+2012-09-11,9th & Upshur St NW,0,0.027359152
+2012-09-12,9th & Upshur St NW,0,0.028134821
+2012-09-13,9th & Upshur St NW,0,0.02718644
+2012-09-14,9th & Upshur St NW,0,0.027359152
+2012-09-17,9th & Upshur St NW,0,0.028493037
+2012-09-18,9th & Upshur St NW,0,0.030624222
+2012-09-19,9th & Upshur St NW,0,0.029876228
+2012-09-20,9th & Upshur St NW,0,0.029408075
+2012-09-21,9th & Upshur St NW,0,0.028016388
+2012-09-24,9th & Upshur St NW,0,0.029688114
+2012-09-25,9th & Upshur St NW,0,0.029610071
+2012-09-26,9th & Upshur St NW,0,0.03125862
+2012-09-27,9th & Upshur St NW,0,0.030915458
+2012-09-28,9th & Upshur St NW,0,0.028704047
+2012-10-01,9th & Upshur St NW,0,0.030850524
+2012-10-02,9th & Upshur St NW,0,0.028298454
+2012-10-03,9th & Upshur St NW,0,0.032259524
+2012-10-04,9th & Upshur St NW,0,0.02718644
+2012-10-05,9th & Upshur St NW,0,0.030479586
+2012-10-09,9th & Upshur St NW,0,0.031539105
+2012-10-10,9th & Upshur St NW,0,0.033361297
+2012-10-11,9th & Upshur St NW,0,0.029284457
+2012-10-12,9th & Upshur St NW,0,0.030737141
+2012-10-15,9th & Upshur St NW,0,0.028992858
+2012-10-16,9th & Upshur St NW,0,0.032771535
+2012-10-17,9th & Upshur St NW,0,0.030947976
+2012-10-18,9th & Upshur St NW,0,0.031242207
+2012-10-19,9th & Upshur St NW,0,0.025408905
+2012-10-22,9th & Upshur St NW,0,0.032480463
+2012-10-23,9th & Upshur St NW,0,0.031622097
+2012-10-24,9th & Upshur St NW,0,0.03387244
+2012-10-25,9th & Upshur St NW,0,0.031472903
+2012-10-26,9th & Upshur St NW,0,0.029253637
+2012-10-31,9th & Upshur St NW,0,0.02795734
+2012-11-01,9th & Upshur St NW,0,0.027100476
+2012-11-02,9th & Upshur St NW,0,0.02859836
+2012-11-05,9th & Upshur St NW,0,0.026943563
+2012-11-06,9th & Upshur St NW,0,0.025035413
+2012-11-07,9th & Upshur St NW,0,0.024589093
+2012-11-08,9th & Upshur St NW,0,0.024798159
+2012-11-09,9th & Upshur St NW,0,0.0237825
+2012-11-13,9th & Upshur St NW,0,0.021491755
+2012-11-14,9th & Upshur St NW,0,0.022735042
+2012-11-15,9th & Upshur St NW,0,0.024330191
+2012-11-16,9th & Upshur St NW,0,0.024420489
+2012-11-19,9th & Upshur St NW,0,0.026731035
+2012-11-20,9th & Upshur St NW,0,0.0268017
+2012-11-21,9th & Upshur St NW,0,0.024876997
+2012-11-23,9th & Upshur St NW,0,0.020143034
+2012-11-26,9th & Upshur St NW,0,0.021400671
+2012-11-27,9th & Upshur St NW,0,0.019845368
+2012-11-28,9th & Upshur St NW,0,0.020250386
+2012-11-29,9th & Upshur St NW,0,0.020164456
+2012-11-30,9th & Upshur St NW,0,0.018988132
+2012-12-03,9th & Upshur St NW,0,0.021017745
+2012-12-04,9th & Upshur St NW,0,0.021871513
+2012-12-05,9th & Upshur St NW,0,0.017850628
+2012-12-06,9th & Upshur St NW,0,0.01611322
+2012-12-07,9th & Upshur St NW,0,0.015365342
+2012-12-10,9th & Upshur St NW,0,0.020025564
+2012-12-11,9th & Upshur St NW,0,0.017399773
+2012-12-12,9th & Upshur St NW,0,0.01712367
+2012-12-13,9th & Upshur St NW,0,0.015177691
+2012-12-14,9th & Upshur St NW,0,0.014753822
+2012-12-17,9th & Upshur St NW,0,0.017917337
+2012-12-18,9th & Upshur St NW,0,0.017926889
+2012-12-19,9th & Upshur St NW,0,0.016173529
+2012-12-20,9th & Upshur St NW,0,0.016225418
+2012-12-21,9th & Upshur St NW,0,0.014038069
+2012-12-24,9th & Upshur St NW,0,0.014809132
+2012-12-26,9th & Upshur St NW,0,0.012312322
+2012-12-27,9th & Upshur St NW,0,0.013392365
+2012-12-28,9th & Upshur St NW,0,0.01295511
+2012-12-31,9th & Upshur St NW,0,0.013777666
+2012-07-02,Park Rd & Holmead Pl NW,0,0.0054498333
+2012-07-03,Park Rd & Holmead Pl NW,0,0.005244976
+2012-07-05,Park Rd & Holmead Pl NW,0,0.006743533
+2012-07-06,Park Rd & Holmead Pl NW,0,0.005893239
+2012-07-09,Park Rd & Holmead Pl NW,0,0.004738795
+2012-07-10,Park Rd & Holmead Pl NW,0,0.005852066
+2012-07-11,Park Rd & Holmead Pl NW,0,0.0067982627
+2012-07-12,Park Rd & Holmead Pl NW,0,0.0062736445
+2012-07-13,Park Rd & Holmead Pl NW,0,0.0053652143
+2012-07-16,Park Rd & Holmead Pl NW,0,0.006812934
+2012-07-17,Park Rd & Holmead Pl NW,0,0.0071053314
+2012-07-18,Park Rd & Holmead Pl NW,0,0.007836954
+2012-07-19,Park Rd & Holmead Pl NW,0,0.0061530503
+2012-07-20,Park Rd & Holmead Pl NW,0,0.0064624427
+2012-07-23,Park Rd & Holmead Pl NW,0,0.007260083
+2012-07-24,Park Rd & Holmead Pl NW,0,0.0074662706
+2012-07-25,Park Rd & Holmead Pl NW,0,0.007803278
+2012-07-26,Park Rd & Holmead Pl NW,0,0.0077072573
+2012-07-27,Park Rd & Holmead Pl NW,0,0.007661748
+2012-07-30,Park Rd & Holmead Pl NW,0,0.0081466
+2012-07-31,Park Rd & Holmead Pl NW,0,0.008717943
+2012-08-01,Park Rd & Holmead Pl NW,0,0.007773928
+2012-08-02,Park Rd & Holmead Pl NW,0,0.0067471717
+2012-08-03,Park Rd & Holmead Pl NW,0,0.0066246684
+2012-08-06,Park Rd & Holmead Pl NW,0,0.005880541
+2012-08-07,Park Rd & Holmead Pl NW,0,0.007943118
+2012-08-08,Park Rd & Holmead Pl NW,0,0.007887733
+2012-08-09,Park Rd & Holmead Pl NW,0,0.007765561
+2012-08-10,Park Rd & Holmead Pl NW,0,0.005970018
+2012-08-13,Park Rd & Holmead Pl NW,0,0.007769739
+2012-08-14,Park Rd & Holmead Pl NW,0,0.006685637
+2012-08-15,Park Rd & Holmead Pl NW,0,0.009155122
+2012-08-16,Park Rd & Holmead Pl NW,0,0.008926679
+2012-08-17,Park Rd & Holmead Pl NW,0,0.013963173
+2012-08-20,Park Rd & Holmead Pl NW,0,0.009344044
+2012-08-21,Park Rd & Holmead Pl NW,0,0.009780722
+2012-08-22,Park Rd & Holmead Pl NW,0,0.009764976
+2012-08-23,Park Rd & Holmead Pl NW,0,0.009125638
+2012-08-24,Park Rd & Holmead Pl NW,0,0.009013488
+2012-08-27,Park Rd & Holmead Pl NW,0,0.010704089
+2012-08-28,Park Rd & Holmead Pl NW,0,0.011814519
+2012-08-29,Park Rd & Holmead Pl NW,0,0.01299681
+2012-08-30,Park Rd & Holmead Pl NW,0,0.012083536
+2012-08-31,Park Rd & Holmead Pl NW,0,0.011251794
+2012-09-04,Park Rd & Holmead Pl NW,0,0.01541467
+2012-09-05,Park Rd & Holmead Pl NW,0,0.016496079
+2012-09-06,Park Rd & Holmead Pl NW,0,0.012830832
+2012-09-07,Park Rd & Holmead Pl NW,0,0.016190823
+2012-09-10,Park Rd & Holmead Pl NW,0,0.018847171
+2012-09-11,Park Rd & Holmead Pl NW,0,0.019345097
+2012-09-12,Park Rd & Holmead Pl NW,0,0.020175159
+2012-09-13,Park Rd & Holmead Pl NW,0,0.019314235
+2012-09-14,Park Rd & Holmead Pl NW,0,0.019677224
+2012-09-17,Park Rd & Holmead Pl NW,0,0.019951168
+2012-09-18,Park Rd & Holmead Pl NW,0,0.024099434
+2012-09-19,Park Rd & Holmead Pl NW,0,0.021548888
+2012-09-20,Park Rd & Holmead Pl NW,0,0.020939749
+2012-09-21,Park Rd & Holmead Pl NW,0,0.019583255
+2012-09-24,Park Rd & Holmead Pl NW,0,0.020795643
+2012-09-25,Park Rd & Holmead Pl NW,0,0.02108483
+2012-09-26,Park Rd & Holmead Pl NW,0,0.022650821
+2012-09-27,Park Rd & Holmead Pl NW,0,0.02223422
+2012-09-28,Park Rd & Holmead Pl NW,0,0.020293485
+2012-10-01,Park Rd & Holmead Pl NW,0,0.021526014
+2012-10-02,Park Rd & Holmead Pl NW,0,0.019181117
+2012-10-03,Park Rd & Holmead Pl NW,0,0.023407536
+2012-10-04,Park Rd & Holmead Pl NW,0,0.018558415
+2012-10-05,Park Rd & Holmead Pl NW,0,0.02108485
+2012-10-09,Park Rd & Holmead Pl NW,0,0.022626797
+2012-10-10,Park Rd & Holmead Pl NW,0,0.024137748
+2012-10-11,Park Rd & Holmead Pl NW,0,0.020707456
+2012-10-12,Park Rd & Holmead Pl NW,0,0.021560332
+2012-10-15,Park Rd & Holmead Pl NW,0,0.020143025
+2012-10-16,Park Rd & Holmead Pl NW,0,0.022710929
+2012-10-17,Park Rd & Holmead Pl NW,0,0.021825146
+2012-10-18,Park Rd & Holmead Pl NW,0,0.022328783
+2012-10-19,Park Rd & Holmead Pl NW,0,0.01698723
+2012-10-22,Park Rd & Holmead Pl NW,0,0.022795381
+2012-10-23,Park Rd & Holmead Pl NW,0,0.021836724
+2012-10-24,Park Rd & Holmead Pl NW,0,0.024368852
+2012-10-25,Park Rd & Holmead Pl NW,0,0.0226388
+2012-10-26,Park Rd & Holmead Pl NW,0,0.020315075
+2012-10-31,Park Rd & Holmead Pl NW,0,0.019604104
+2012-11-01,Park Rd & Holmead Pl NW,0,0.017586248
+2012-11-02,Park Rd & Holmead Pl NW,0,0.019130139
+2012-11-05,Park Rd & Holmead Pl NW,0,0.018558415
+2012-11-06,Park Rd & Holmead Pl NW,0,0.017261168
+2012-11-07,Park Rd & Holmead Pl NW,0,0.017242786
+2012-11-08,Park Rd & Holmead Pl NW,0,0.017005369
+2012-11-09,Park Rd & Holmead Pl NW,0,0.01585721
+2012-11-13,Park Rd & Holmead Pl NW,0,0.0145813245
+2012-11-14,Park Rd & Holmead Pl NW,0,0.015874157
+2012-11-15,Park Rd & Holmead Pl NW,0,0.016869854
+2012-11-16,Park Rd & Holmead Pl NW,0,0.016566634
+2012-11-19,Park Rd & Holmead Pl NW,0,0.019008351
+2012-11-20,Park Rd & Holmead Pl NW,0,0.018647559
+2012-11-21,Park Rd & Holmead Pl NW,0,0.017793654
+2012-11-23,Park Rd & Holmead Pl NW,0,0.013851568
+2012-11-26,Park Rd & Holmead Pl NW,0,0.014856704
+2012-11-27,Park Rd & Holmead Pl NW,0,0.013457034
+2012-11-28,Park Rd & Holmead Pl NW,0,0.01446485
+2012-11-29,Park Rd & Holmead Pl NW,0,0.014418523
+2012-11-30,Park Rd & Holmead Pl NW,0,0.013529252
+2012-12-03,Park Rd & Holmead Pl NW,0,0.015088742
+2012-12-04,Park Rd & Holmead Pl NW,0,0.01570553
+2012-12-05,Park Rd & Holmead Pl NW,0,0.012161494
+2012-12-06,Park Rd & Holmead Pl NW,0,0.011770264
+2012-12-07,Park Rd & Holmead Pl NW,0,0.011030645
+2012-12-10,Park Rd & Holmead Pl NW,0,0.015056525
+2012-12-11,Park Rd & Holmead Pl NW,0,0.012885916
+2012-12-12,Park Rd & Holmead Pl NW,0,0.0126398355
+2012-12-13,Park Rd & Holmead Pl NW,0,0.011125754
+2012-12-14,Park Rd & Holmead Pl NW,0,0.010907048
+2012-12-17,Park Rd & Holmead Pl NW,0,0.013115654
+2012-12-18,Park Rd & Holmead Pl NW,0,0.01298985
+2012-12-19,Park Rd & Holmead Pl NW,0,0.011973925
+2012-12-20,Park Rd & Holmead Pl NW,0,0.012226853
+2012-12-21,Park Rd & Holmead Pl NW,0,0.010561406
+2012-12-24,Park Rd & Holmead Pl NW,0,0.011373156
+2012-12-26,Park Rd & Holmead Pl NW,0,0.00953682
+2012-12-27,Park Rd & Holmead Pl NW,0,0.010533102
+2012-12-28,Park Rd & Holmead Pl NW,0,0.009838687
+2012-12-31,Park Rd & Holmead Pl NW,0,0.010848674

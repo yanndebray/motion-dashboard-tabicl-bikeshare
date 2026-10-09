@@ -1,0 +1,143 @@
+{
+ "t1": {
+  "Day-of-week average": {
+   "mae": 57.0
+  },
+  "Yesterday's value": {
+   "mae": 29.2
+  },
+  "Gradient boosting": {
+   "mae": 23.5,
+   "coverage_80": 0.707,
+   "pinball_90": 4.45
+  },
+  "TabICL (local)": {
+   "mae": 33.9,
+   "coverage_80": 0.862,
+   "pinball_90": 4.35
+  },
+  "TabICL (api)": {
+   "mae": 34.5,
+   "coverage_80": 0.813,
+   "pinball_90": 4.38
+  },
+  "Gradient boosting, level-adjusted": {
+   "mae": 23.6
+  },
+  "TabICL (local), level-adjusted": {
+   "mae": 21.5,
+   "coverage_80": 0.902,
+   "pinball_90": 4.59,
+   "bias": 3.8
+  },
+  "TabICL (api), level-adjusted": {
+   "mae": 21.7,
+   "coverage_80": 0.911,
+   "pinball_90": 4.72,
+   "bias": 2.8
+  }
+ },
+ "t2": {
+  "Station base rate": {
+   "auc": 0.944,
+   "avg_precision": 0.683,
+   "brier": 0.0789,
+   "log_loss": 0.2458
+  },
+  "Logistic regression": {
+   "auc": 0.937,
+   "avg_precision": 0.737,
+   "brier": 0.065,
+   "log_loss": 0.2096
+  },
+  "Gradient boosting": {
+   "auc": 0.938,
+   "avg_precision": 0.738,
+   "brier": 0.0669,
+   "log_loss": 0.27
+  },
+  "TabICL (local, 4,464-row context)": {
+   "auc": 0.94,
+   "avg_precision": 0.726,
+   "brier": 0.06,
+   "log_loss": 0.1974
+  },
+  "TabICL (local, 2,000-row context)": {
+   "auc": 0.949,
+   "avg_precision": 0.769,
+   "brier": 0.0602,
+   "log_loss": 0.1996
+  },
+  "TabICL (API, 2,000-row context)": {
+   "auc": 0.95,
+   "avg_precision": 0.774,
+   "brier": 0.0588,
+   "log_loss": 0.1958
+  },
+  "_test_positive_rate": 0.125
+ },
+ "t3": {
+  "hill_departures": {
+   "Same hour last week": {
+    "mae": 9.7
+   },
+   "TabICL (local, 108-day context)": {
+    "mae": 9.4,
+    "coverage_80": 0.676
+   },
+   "TabICL (local, 28-day context)": {
+    "mae": 12.7,
+    "coverage_80": 0.565
+   },
+   "TabICL (API, 28-day context)": {
+    "mae": 11.0,
+    "coverage_80": 0.711
+   }
+  },
+  "system": {
+   "Same hour last week": {
+    "mae": 85.4
+   },
+   "TabICL (local, 108-day context)": {
+    "mae": 84.2,
+    "coverage_80": 0.655
+   },
+   "TabICL (local, 28-day context)": {
+    "mae": 102.6,
+    "coverage_80": 0.568
+   },
+   "TabICL (API, 28-day context)": {
+    "mae": 102.7,
+    "coverage_80": 0.619
+   }
+  }
+ },
+ "timings": {
+  "local": {
+   "t1": 3.73,
+   "t2": 6.84,
+   "t3": 12.97,
+   "t2_2000": 3.46,
+   "t3_28d": 7.3
+  },
+  "api": {
+   "t1": 16.8,
+   "t2": 189.94,
+   "t3": 69.71
+  }
+ },
+ "local_vs_api": {
+  "t1 level-adjusted, mean": {
+   "corr": 0.9957,
+   "mean_abs_diff_bikes": 1.71
+  },
+  "t2 2,000-row context, proba": {
+   "corr": 0.9981,
+   "mean_abs_diff": 0.0074
+  },
+  "t3 28-day context, mean": {
+   "corr": 0.9799,
+   "mean_abs_diff_rides": 15.45
+  }
+ }
+}
