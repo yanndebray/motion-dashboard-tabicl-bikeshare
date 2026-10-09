@@ -26,3 +26,14 @@
 .pin { position:absolute; width:6px; border-radius:3px; background:var(--second) } .pin.is-hot { background:var(--accent) }
 .ax { font-family:var(--mono, ui-monospace, monospace); font-size:22px; fill:color-mix(in srgb, var(--second) 60%, var(--ground)) }
 .plan-chip::after, .carry-tag::after { display:none }
+.tbl { position:absolute; display:flex; flex-direction:column; gap:8px; font-variant-numeric:tabular-nums }
+.tbl-row { display:grid; grid-template-columns:260px 110px 130px 150px 190px 190px 230px; align-items:center; height:62px; padding:0 24px; border-radius:10px; background:color-mix(in srgb, var(--ground) 40%, white); font-size:30px; box-shadow:0 4px 12px rgba(0,0,0,.06) }
+.tbl-row > span:last-child { font-weight:700; text-align:right }
+.tbl-head { background:none; box-shadow:none; height:44px; font-size:22px; letter-spacing:.08em; text-transform:uppercase; color:color-mix(in srgb, var(--second) 60%, var(--ground)) }
+.tbl-more { background:none; box-shadow:none; height:44px; font-size:24px; color:color-mix(in srgb, var(--second) 55%, var(--ground)) }
+.tbl-q { background:color-mix(in srgb, var(--main) 14%, var(--ground)); border:3px solid var(--main) }
+.tbl-q > span:last-child { color:var(--main); font-size:44px }
+.node { position:absolute; display:flex; flex-direction:column; justify-content:center; gap:8px; padding:26px 32px; border-radius:18px; background:color-mix(in srgb, var(--ground) 40%, white); border:3px solid var(--second); box-shadow:0 14px 34px rgba(0,0,0,.12) }
+.node b { font-family:var(--display, var(--sans, system-ui, sans-serif)); font-size:56px; font-weight:800; line-height:1 } .node small { font-size:26px; color:color-mix(in srgb, var(--second) 70%, var(--ground)) }
+.node.is-model { background:var(--second); color:var(--ground); border-color:var(--second) } .node.is-model small { color:color-mix(in srgb, var(--ground) 75%, var(--second)) }
+.chip { position:absolute; font-size:24px; font-weight:600; padding:8px 14px; border-radius:999px; background:var(--main); color:var(--ground); white-space:nowrap }
